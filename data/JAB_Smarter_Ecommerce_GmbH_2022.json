@@ -1,0 +1,534 @@
+{
+  "scheme" : "ugb",
+  "general-information" : {
+    "scope" : "individual",
+    "subject" : {
+      "type" : "company",
+      "name" : "Smarter Ecommerce GmbH",
+      "business-register-number" : "298859z"
+    },
+    "current-period" : {
+      "begin" : "2022-01-01",
+      "end" : "2022-12-31",
+      "value-representation" : {
+        "scaling" : 1,
+        "decimal-places" : 2
+      },
+      "size-category" : "medium"
+    },
+    "previous-period" : {
+      "begin" : "2021-01-01",
+      "end" : "2021-12-31",
+      "value-representation" : {
+        "scaling" : 1000,
+        "decimal-places" : 0
+      }
+    },
+    "currency" : "EUR"
+  },
+  "structure" : {
+    "balance-sheet" : {
+      "type" : "full",
+      "positions" : [ {
+        "name" : "AKTIVA",
+        "value" : 4710152.53,
+        "previous-period-value" : 5319.0,
+        "well-known-position-type" : "assets",
+        "sub-positions" : [ {
+          "name" : "ANLAGEVERMOEGEN",
+          "value" : 624668.67,
+          "previous-period-value" : 737.0,
+          "well-known-position-type" : "non-current-assets",
+          "sub-positions" : [ {
+            "name" : "IMMATERIELLE_VERMOEGENSGEGENSTAENDE",
+            "value" : 13972.67,
+            "previous-period-value" : 22.0
+          }, {
+            "name" : "SACHANLAGEN",
+            "value" : 589727.48,
+            "previous-period-value" : 694.0,
+            "well-known-position-type" : "property-plant-equipment",
+            "sub-positions" : [ {
+              "name" : "GRUNDSTUECKE_GRUNDSTUECKSGLEICHE_RECHTE_UND_BAUTEN",
+              "title" : "Bauten",
+              "value" : 109190.06,
+              "previous-period-value" : 126.0
+            }, {
+              "name" : "ANDERE_ANLAGEN_BETRIEBS_UND_GESCHAEFTSAUSSTATTUNG",
+              "title" : "Betriebs- und Geschäftsausstattung",
+              "value" : 480537.42,
+              "previous-period-value" : 567.0
+            }, {
+              "name" : "GELEISTETE_ANZAHLUNGEN_UND_ANLAGEN_IM_BAU",
+              "title" : "Anlagen in Bau",
+              "value" : 0.0,
+              "previous-period-value" : 1.0
+            } ]
+          }, {
+            "name" : "FINANZANLAGEN",
+            "value" : 20968.52,
+            "previous-period-value" : 21.0,
+            "sub-positions" : [ {
+              "name" : "FINANZANLAGEN_ANTEILE_AN_VERBUNDENEN_UNTERNEHMEN",
+              "title" : "Anteile an verbundenen Unternehmen",
+              "value" : 20968.52,
+              "previous-period-value" : 21.0
+            }, {
+              "name" : "FINANZANLAGEN_NICHT_AUSWEISPFLICHTIGER_REST",
+              "value" : 0.0,
+              "previous-period-value" : 0.0
+            } ]
+          } ]
+        }, {
+          "name" : "UMLAUFVERMOEGEN",
+          "value" : 3823119.07,
+          "previous-period-value" : 4346.0,
+          "well-known-position-type" : "current-assets",
+          "sub-positions" : [ {
+            "name" : "FORDERUNGEN_UND_SONSTIGE_VERMOEGENSGEGENSTAENDE",
+            "value" : 2902216.52,
+            "previous-period-value" : 2486.0,
+            "sub-positions" : [ {
+              "name" : "FORDERUNGEN_GEGENUEBER_VERBUNDENEN_UNTERNEHMEN",
+              "title" : "Forderungen gegenüber verbundenen Unternehmen",
+              "value" : 836184.14,
+              "previous-period-value" : 728.0
+            }, {
+              "name" : "FORDERUNGEN_NICHT_AUSWEISPFLICHTIGER_REST",
+              "value" : 2066032.38,
+              "previous-period-value" : 1759.0
+            } ]
+          }, {
+            "name" : "KASSENBESTAND_SCHECKS_GUTHABEN_BEI_KREDITINSTITUTEN",
+            "title" : "Kassenbestand, Guthaben bei Kreditinstituten",
+            "value" : 920902.55,
+            "previous-period-value" : 1860.0,
+            "well-known-position-type" : "cash-and-cash-equivalents"
+          } ]
+        }, {
+          "name" : "AKTIVA_RECHNUNGSABGRENZUNGSPOSTEN",
+          "value" : 260077.6,
+          "previous-period-value" : 234.0
+        }, {
+          "name" : "AKTIVE_LATENTE_STEUERN",
+          "value" : 2287.19,
+          "previous-period-value" : 2.0
+        } ]
+      }, {
+        "name" : "PASSIVA",
+        "value" : 4710152.53,
+        "previous-period-value" : 5319.0,
+        "well-known-position-type" : "liabilities-and-equity",
+        "sub-positions" : [ {
+          "name" : "EIGENKAPITAL",
+          "value" : 855480.23,
+          "previous-period-value" : 2871.0,
+          "well-known-position-type" : "equity",
+          "sub-positions" : [ {
+            "name" : "EINGEFORDERTES_STAMMKAPITAL",
+            "value" : 48722.0,
+            "previous-period-value" : 49.0,
+            "sub-positions" : [ {
+              "name" : "STAMMKAPITAL",
+              "value" : 48722.0,
+              "previous-period-value" : 49.0
+            }, {
+              "name" : "DAVON_EINGEZAHLT",
+              "value" : 48722.0,
+              "previous-period-value" : 49.0
+            } ]
+          }, {
+            "name" : "KAPITALRUECKLAGEN",
+            "title" : "Kapitalrücklagen",
+            "value" : 1886578.02,
+            "previous-period-value" : 1887.0
+          }, {
+            "name" : "BILANZGEWINN_BILANZVERLUST",
+            "value" : -1079819.79,
+            "previous-period-value" : 936.0,
+            "well-known-position-type" : "distributable-profit",
+            "sub-positions" : [ {
+              "name" : "DAVON_GEWINNVORTRAG_VERLUSTVORTRAG",
+              "value" : 935500.17,
+              "previous-period-value" : 1560.0,
+              "well-known-position-type" : "retained-earnings"
+            } ]
+          } ]
+        }, {
+          "name" : "INVESTITIONSZUSCHUESSE",
+          "value" : 166.57,
+          "previous-period-value" : 1.0
+        }, {
+          "name" : "RUECKSTELLUNGEN",
+          "value" : 491650.0,
+          "previous-period-value" : 640.0,
+          "well-known-position-type" : "provisions"
+        }, {
+          "name" : "VERBINDLICHKEITEN",
+          "value" : 3292198.85,
+          "previous-period-value" : 1615.0,
+          "well-known-position-type" : "liabilities",
+          "sub-positions" : [ {
+            "name" : "DAVON_RESTLAUFZEIT_VON_MEHR_ALS_EINEM_JAHR",
+            "title" : "davon mit einer Restlaufzeit von mehr als einem Jahr",
+            "value" : 2000000.0,
+            "previous-period-value" : 0.0
+          }, {
+            "name" : "VERBINDLICHKEITEN_GEGENUEBER_KREDITINSTITUTEN",
+            "title" : "Verbindlichkeiten gegenüber Kreditinstituten",
+            "value" : 2000000.0,
+            "previous-period-value" : 0.0,
+            "sub-positions" : [ {
+              "name" : "DAVON_RESTLAUFZEIT_VON_MEHR_ALS_EINEM_JAHR",
+              "value" : 2000000.0,
+              "previous-period-value" : 0.0
+            } ]
+          }, {
+            "name" : "VERBINDLICHKEITEN_GEGENUEBER_VERBUNDENEN_UNTERNEHMEN",
+            "title" : "Verbindlichkeiten gegenüber verbundenen Unternehmen",
+            "value" : 44225.8,
+            "previous-period-value" : 242.0
+          }, {
+            "name" : "VERBINDLICHKEITEN_NICHT_AUSWEISPFLICHTIGER_REST",
+            "value" : 1247973.05,
+            "previous-period-value" : 1373.0
+          } ]
+        }, {
+          "name" : "PASSIVA_RECHNUNGSABGRENZUNGSPOSTEN",
+          "value" : 70656.88,
+          "previous-period-value" : 192.0
+        } ]
+      } ]
+    },
+    "profit-loss-statement" : {
+      "type" : "nature-of-expense-method",
+      "positions" : [ {
+        "name" : "BILANZ_GEWINN_VERLUST",
+        "value" : -1079819.79,
+        "previous-period-value" : 936.0,
+        "well-known-position-type" : "distributable-profit",
+        "sub-positions" : [ {
+          "name" : "JAHRESUEBERSCHUSS_JAHRESFEHLBETRAG",
+          "value" : -2015319.96,
+          "previous-period-value" : -625.0,
+          "well-known-position-type" : "net-income",
+          "sub-positions" : [ {
+            "name" : "ERGEBNIS_NACH_STEUERN",
+            "value" : -2015319.96,
+            "previous-period-value" : -625.0,
+            "well-known-position-type" : "eat",
+            "sub-positions" : [ {
+              "name" : "ERGEBNIS_VOR_STEUERN",
+              "value" : -2014206.34,
+              "previous-period-value" : -626.0,
+              "well-known-position-type" : "ebt",
+              "sub-positions" : [ {
+                "name" : "ZWISCHENSUMME_BETRIEBSERFOLG",
+                "value" : -2098554.71,
+                "previous-period-value" : -597.0,
+                "well-known-position-type" : "ebit",
+                "sub-positions" : [ {
+                  "name" : "ROHERGEBNIS",
+                  "value" : 11032874.65,
+                  "previous-period-value" : 12494.0
+                }, {
+                  "name" : "SONSTIGE_BETRIEBLICHE_ERTRAEGE",
+                  "value" : 1400682.32,
+                  "previous-period-value" : 1305.0,
+                  "sub-positions" : [ {
+                    "name" : "ERTRAEGE_AUS_ABGANG_UND_ZUSCHREIBUNG_ZUM_ANLAGEVERMOEGEN",
+                    "title" : "Erträge aus dem Abgang vom Anlagevermögen mit Ausnahme der Finanzanlagen",
+                    "value" : 20558.34,
+                    "previous-period-value" : 0.0
+                  }, {
+                    "name" : "ERTRAEGE_AUS_AUFLOESUNG_VON_RUECKSTELLUNGEN",
+                    "value" : 19091.02,
+                    "previous-period-value" : 24.0
+                  }, {
+                    "name" : "UEBRIGE",
+                    "value" : 1361032.96,
+                    "previous-period-value" : 1281.0
+                  } ]
+                }, {
+                  "name" : "PERSONALAUFWAND",
+                  "value" : -10866908.62,
+                  "previous-period-value" : -10633.0,
+                  "sub-positions" : [ {
+                    "name" : "GEHAELTER",
+                    "value" : -8334380.6,
+                    "previous-period-value" : -8191.0
+                  }, {
+                    "name" : "SOZIALE_AUFWENDUNGEN",
+                    "value" : -2532528.02,
+                    "previous-period-value" : -2442.0,
+                    "sub-positions" : [ {
+                      "name" : "DAVON_AUFWENDUNGEN_FUER_LEISTUNGEN_AN_MITARBEITERVORSORGEKASSEN",
+                      "value" : -126257.08,
+                      "previous-period-value" : -123.0
+                    }, {
+                      "name" : "DAVON_AUFWENDUNGEN_FUER_SOZIALABGABEN",
+                      "value" : -2355726.27,
+                      "previous-period-value" : -2270.0
+                    } ]
+                  } ]
+                }, {
+                  "name" : "ABSCHREIBUNGEN",
+                  "value" : -285514.09,
+                  "previous-period-value" : -366.0,
+                  "sub-positions" : [ {
+                    "name" : "GEGENSTAENDE_DES_ANLAGEVERMOEGENS_UND_SACHANLAGEN",
+                    "title" : "auf immaterielle Gegenstände des Anlagevermögens und Sachanlagen",
+                    "value" : -285514.09,
+                    "previous-period-value" : -366.0
+                  } ]
+                }, {
+                  "name" : "SONSTIGE_BETRIEBLICHE_AUFWENDUNGEN",
+                  "value" : -3379688.97,
+                  "previous-period-value" : -3397.0
+                } ]
+              }, {
+                "name" : "ZWISCHENSUMME_FINANZERFOLG",
+                "value" : 84348.37,
+                "previous-period-value" : -29.0,
+                "well-known-position-type" : "net-financial-result",
+                "sub-positions" : [ {
+                  "name" : "ERTRAEGE_AUS_BETEILIGUNGEN",
+                  "value" : 120000.0,
+                  "previous-period-value" : 0.0,
+                  "sub-positions" : [ {
+                    "name" : "DAVON_AUS_VERBUNDENEN_UNTERNEHMEN",
+                    "value" : 120000.0,
+                    "previous-period-value" : 0.0
+                  } ]
+                }, {
+                  "name" : "SONSTIGE_ZINSEN_UND_AEHNLICHE_ERTRAEGE",
+                  "value" : 1526.9,
+                  "previous-period-value" : 5.0,
+                  "sub-positions" : [ {
+                    "name" : "DAVON_AUS_VERBUNDENEN_UNTERNEHMEN",
+                    "value" : 1515.14,
+                    "previous-period-value" : 5.0
+                  } ]
+                }, {
+                  "name" : "AUFWENDUNGEN_AUS_FINANZANLAGEN_UND_WERTPAPIEREN",
+                  "value" : -7.27,
+                  "previous-period-value" : 0.0
+                }, {
+                  "name" : "ZINSEN_UND_AEHNLICHE_AUFWENDUNGEN",
+                  "value" : -37171.26,
+                  "previous-period-value" : -34.0
+                } ]
+              } ]
+            }, {
+              "name" : "STEUERN_VOM_EINKOMMEN_UND_ERTRAG",
+              "value" : -1113.62,
+              "previous-period-value" : 1.0
+            } ]
+          } ]
+        }, {
+          "name" : "GEWINN_VERLUSTVORTRAG_AUS_DEM_VORJAHR",
+          "value" : 935500.17,
+          "previous-period-value" : 1560.0
+        } ]
+      } ]
+    },
+    "asset-schedule" : {
+      "positions" : [ {
+        "name" : "ANLAGEVERMOEGEN",
+        "opening-balance" : 1702444.16,
+        "additions" : 180801.66,
+        "capitalized-borrowing-costs" : 0.0,
+        "reclassifications" : 0.0,
+        "disposals" : 334561.35,
+        "closing-balance" : 1548684.47,
+        "accumulated-adjustments-opening-balance" : 965313.37,
+        "current-depreciation" : 285514.09,
+        "current-write-ups" : 0.0,
+        "adjustements-on-additions" : 0.0,
+        "adjustments-on-reclassifications" : 0.0,
+        "adjustments-on-disposals" : 326811.66,
+        "accumulated-adjustments-closing-balance" : 924015.8,
+        "net-book-value-opening-balance" : 737130.79,
+        "net-book-value-closing-balance" : 624668.67,
+        "sub-positions" : [ {
+          "name" : "IMMATERIELLE_VERMOEGENSGEGENSTAENDE",
+          "opening-balance" : 50848.62,
+          "additions" : 790.5,
+          "capitalized-borrowing-costs" : 0.0,
+          "reclassifications" : 0.0,
+          "disposals" : 20772.91,
+          "closing-balance" : 30866.21,
+          "accumulated-adjustments-opening-balance" : 29067.43,
+          "current-depreciation" : 8598.88,
+          "current-write-ups" : 0.0,
+          "adjustements-on-additions" : 0.0,
+          "adjustments-on-reclassifications" : 0.0,
+          "adjustments-on-disposals" : 20772.77,
+          "accumulated-adjustments-closing-balance" : 16893.54,
+          "net-book-value-opening-balance" : 21781.19,
+          "net-book-value-closing-balance" : 13972.67
+        }, {
+          "name" : "SACHANLAGEN",
+          "opening-balance" : 1630619.75,
+          "additions" : 180011.16,
+          "capitalized-borrowing-costs" : 0.0,
+          "reclassifications" : 0.0,
+          "disposals" : 313781.17,
+          "closing-balance" : 1496849.74,
+          "accumulated-adjustments-opening-balance" : 936245.94,
+          "current-depreciation" : 276915.21,
+          "current-write-ups" : 0.0,
+          "adjustements-on-additions" : 0.0,
+          "adjustments-on-reclassifications" : 0.0,
+          "adjustments-on-disposals" : 306038.89,
+          "accumulated-adjustments-closing-balance" : 907122.26,
+          "net-book-value-opening-balance" : 694373.81,
+          "net-book-value-closing-balance" : 589727.48,
+          "sub-positions" : [ {
+            "name" : "GRUNDSTUECKE_GRUNDSTUECKSGLEICHE_RECHTE_UND_BAUTEN",
+            "title" : "Bauten",
+            "opening-balance" : 183672.24,
+            "additions" : 32.5,
+            "capitalized-borrowing-costs" : 0.0,
+            "reclassifications" : 1137.5,
+            "disposals" : 0.0,
+            "closing-balance" : 184842.24,
+            "accumulated-adjustments-opening-balance" : 57616.89,
+            "current-depreciation" : 18035.29,
+            "current-write-ups" : 0.0,
+            "adjustements-on-additions" : 0.0,
+            "adjustments-on-reclassifications" : 0.0,
+            "adjustments-on-disposals" : 0.0,
+            "accumulated-adjustments-closing-balance" : 75652.18,
+            "net-book-value-opening-balance" : 126055.35,
+            "net-book-value-closing-balance" : 109190.06
+          }, {
+            "name" : "ANDERE_ANLAGEN_BETRIEBS_UND_GESCHAEFTSAUSSTATTUNG",
+            "title" : "Betriebs- und Geschäftsausstattung",
+            "opening-balance" : 1445810.01,
+            "additions" : 179978.66,
+            "capitalized-borrowing-costs" : 0.0,
+            "reclassifications" : 0.0,
+            "disposals" : 313781.17,
+            "closing-balance" : 1312007.5,
+            "accumulated-adjustments-opening-balance" : 878629.05,
+            "current-depreciation" : 258879.92,
+            "current-write-ups" : 0.0,
+            "adjustements-on-additions" : 0.0,
+            "adjustments-on-reclassifications" : 0.0,
+            "adjustments-on-disposals" : 306038.89,
+            "accumulated-adjustments-closing-balance" : 831470.08,
+            "net-book-value-opening-balance" : 567180.96,
+            "net-book-value-closing-balance" : 480537.42
+          }, {
+            "name" : "GELEISTETE_ANZAHLUNGEN_UND_ANLAGEN_IM_BAU",
+            "title" : "Anlagen in Bau",
+            "opening-balance" : 1137.5,
+            "additions" : 0.0,
+            "capitalized-borrowing-costs" : 0.0,
+            "reclassifications" : -1137.5,
+            "disposals" : 0.0,
+            "closing-balance" : 0.0,
+            "accumulated-adjustments-opening-balance" : 0.0,
+            "current-depreciation" : 0.0,
+            "current-write-ups" : 0.0,
+            "adjustements-on-additions" : 0.0,
+            "adjustments-on-reclassifications" : 0.0,
+            "adjustments-on-disposals" : 0.0,
+            "accumulated-adjustments-closing-balance" : 0.0,
+            "net-book-value-opening-balance" : 1137.5,
+            "net-book-value-closing-balance" : 0.0
+          } ]
+        }, {
+          "name" : "FINANZANLAGEN",
+          "opening-balance" : 20975.79,
+          "additions" : 0.0,
+          "capitalized-borrowing-costs" : 0.0,
+          "reclassifications" : 0.0,
+          "disposals" : 7.27,
+          "closing-balance" : 20968.52,
+          "accumulated-adjustments-opening-balance" : 0.0,
+          "current-depreciation" : 0.0,
+          "current-write-ups" : 0.0,
+          "adjustements-on-additions" : 0.0,
+          "adjustments-on-reclassifications" : 0.0,
+          "adjustments-on-disposals" : 0.0,
+          "accumulated-adjustments-closing-balance" : 0.0,
+          "net-book-value-opening-balance" : 20975.79,
+          "net-book-value-closing-balance" : 20968.52,
+          "sub-positions" : [ {
+            "name" : "FINANZANLAGEN_ANTEILE_AN_VERBUNDENEN_UNTERNEHMEN",
+            "title" : "Anteile an verbundenen Unternehmen",
+            "opening-balance" : 20968.52,
+            "additions" : 0.0,
+            "capitalized-borrowing-costs" : 0.0,
+            "reclassifications" : 0.0,
+            "disposals" : 0.0,
+            "closing-balance" : 20968.52,
+            "accumulated-adjustments-opening-balance" : 0.0,
+            "current-depreciation" : 0.0,
+            "current-write-ups" : 0.0,
+            "adjustements-on-additions" : 0.0,
+            "adjustments-on-reclassifications" : 0.0,
+            "adjustments-on-disposals" : 0.0,
+            "accumulated-adjustments-closing-balance" : 0.0,
+            "net-book-value-opening-balance" : 20968.52,
+            "net-book-value-closing-balance" : 20968.52
+          } ]
+        } ]
+      } ]
+    },
+    "liabilities-schedule" : {
+      "positions" : [ {
+        "name" : "VERBINDLICHKEITEN",
+        "total" : 3292198.85,
+        "remaining-term-up-to1-year" : 1292198.85,
+        "remaining-term-between1-and5-years" : 2000000.0,
+        "remaining-term-over5-years" : 0.0,
+        "amount-secured-by-collateral" : 1850000.0,
+        "type-and-form-of-collateral" : "Garantie und Bürgschaft",
+        "accrued-liabilities" : 0.0,
+        "sub-positions" : [ {
+          "name" : "VERBINDLICHKEITEN_GEGENUEBER_KREDITINSTITUTEN",
+          "title" : "Verbindlichkeiten gegenüber Kreditinstituten",
+          "total" : 2000000.0,
+          "remaining-term-up-to1-year" : 0.0,
+          "remaining-term-between1-and5-years" : 2000000.0,
+          "remaining-term-over5-years" : 0.0,
+          "amount-secured-by-collateral" : 1850000.0,
+          "type-and-form-of-collateral" : "Garantie und Bürgschaft",
+          "accrued-liabilities" : 0.0
+        }, {
+          "name" : "VERBINDLICHKEITEN_GEGENUEBER_VERBUNDENEN_UNTERNEHMEN",
+          "title" : "Verbindlichkeiten gegenüber verbundenen Unternehmen",
+          "total" : 44225.8,
+          "remaining-term-up-to1-year" : 44225.8,
+          "remaining-term-between1-and5-years" : 0.0,
+          "remaining-term-over5-years" : 0.0,
+          "amount-secured-by-collateral" : 0.0,
+          "accrued-liabilities" : 0.0
+        } ]
+      } ]
+    },
+    "provisions-schedule" : {
+      "positions" : [ {
+        "name" : "RUECKSTELLUNGEN",
+        "opening-balance" : 640350.0,
+        "appropriation" : 483775.0,
+        "utilization" : 630029.01,
+        "dissolution" : 2445.99,
+        "closing-balance" : 491650.0
+      } ]
+    },
+    "reserves-schedule" : {
+      "positions" : [ {
+        "name" : "INVESTITIONSZUSCHUESSE",
+        "opening-balance" : 666.61,
+        "allocation" : 0.0,
+        "utilization" : 0.0,
+        "dissolution" : 458.37,
+        "closing-balance" : 166.57
+      } ]
+    }
+  }
+}

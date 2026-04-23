@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DataHarmonizer</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="icon" href="data:," />
+  <!-- there is no favicon -->
+</head>
+
+<body>
+  <!-- Full-width header outside the box -->
+  <header class="app-header">
+    <div class="header-inner">
+      <div class="header-left">
+        <div class="logo-box">
+          <i data-lucide="files"></i>
+        </div>
+        <div>
+          <div class="header-title">DataHarmonizer</div>
+          <div class="header-subtitle">
+            Analyzing heterogeneous annual financial reports with AI
+          </div>
+        </div>
+      </div>
+      <div class="header-right">
+        <div class="tab-switcher">
+          <button class="tab-btn active" data-tab="chat">Chat</button>
+          <button class="tab-btn" data-tab="documents">Documents</button>
+        </div>
+        <div class="status-pill">
+          <span class="status-dot"></span>
+          Live
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="content-area">
+    <!-- Chat Tab -->
+    <div id="chat-view" class="tab-view active">
+      <div class="chat-card">
+        <div id="chat-history" class="chat-history">
+          <div class="empty-state" id="empty-state">
+            <div class="empty-icon">
+              <i data-lucide="search"></i>
+            </div>
+            <h2>Welcome, ask anything about financial reports</h2>
+            <p>
+              Query structured and unstructured financial reports and get
+              answers directly from the uploaded sources.
+            </p>
+            <div class="chips">
+              <button class="chip" onclick="fillQuery(this)">
+                Bitpanda revenue in 2022?
+              </button>
+              <button class="chip" onclick="fillQuery(this)">
+                Total assets of Maresi GmbH?
+              </button>
+              <button class="chip" onclick="fillQuery(this)">
+                Net profit of Senna GmbH?
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="input-container">
+          <div class="input-row">
+            <input type="text" id="query-input" placeholder="Ask a question..." autofocus />
+            <button id="send-button" aria-label="Send">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <path d="M14 8L2 2l2.5 6L2 14l12-6z" fill="white" />
+              </svg>
+            </button>
+          </div>
+          <p class="input-hint">
+            Press <kbd>Enter</kbd> to send · Answers sourced from official
+            documents
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Documents Tab -->
+    <div id="documents-view" class="tab-view">
+      <!-- Card 1: Upload Area -->
+      <div class="doc-card">
+        <div class="upload-area" id="upload-area">
+          <div class="upload-icon">
+            <i data-lucide="upload"></i>
+          </div>
+          <p class="upload-text">
+            Drop your PDF or JSON files here, or click to select
+          </p>
+          <input type="file" id="file-input" accept=".pdf,.json" multiple hidden />
+          <button class="upload-btn" id="select-files-btn">
+            Select Files
+          </button>
+          <div id="file-list" class="file-list"></div>
+        </div>
+        <button class="process-btn" id="process-btn" disabled>
+          Process Documents
+        </button>
+      </div>
+
+      <!-- Card 2: Ingestion Log -->
+      <div id="ingestion-log" class="doc-card" hidden>
+        <h3 class="log-title">Processing Documents</h3>
+        <div id="log-steps" class="log-steps"></div>
+      </div>
+
+      <!-- Card 3: Ingested Documents -->
+      <div class="doc-card">
+        <h3 class="section-title">Ingested Documents</h3>
+        <div id="document-list" class="document-list">
+          <p class="empty-documents">No documents ingested yet</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+  <script>
+    lucide.createIcons();
+  </script>
+  <script>
+    function fillQuery(el) {
+      document.getElementById('query-input').value = el.textContent;
+      document.getElementById('query-input').focus();
+    }
+  </script>
+</body>
+
+</html>

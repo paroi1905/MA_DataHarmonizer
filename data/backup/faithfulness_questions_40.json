@@ -1,0 +1,377 @@
+[
+  {
+    "id": "FQ01",
+    "question": "What was the revenue of Maresi GmbH in 2022?",
+    "category": "simple_fact",
+    "difficulty": "easy",
+    "expected_answer_contains": ["revenue", "Maresi", "2022"],
+    "requires_calculation": false
+  },
+  {
+    "id": "FQ02",
+    "question": "What were the total assets of Senna GmbH in 2022?",
+    "category": "simple_fact",
+    "difficulty": "easy",
+    "expected_answer_contains": ["total assets", "Senna", "2022"],
+    "requires_calculation": false
+  },
+  {
+    "id": "FQ03",
+    "question": "What was the net profit of Bitpanda GmbH in 2022?",
+    "category": "simple_fact",
+    "difficulty": "easy",
+    "expected_answer_contains": ["net profit", "Bitpanda", "2022"],
+    "requires_calculation": false
+  },
+  {
+    "id": "FQ04",
+    "question": "What was the equity of Smarter Ecommerce GmbH in 2022?",
+    "category": "simple_fact",
+    "difficulty": "easy",
+    "expected_answer_contains": ["equity", "Smarter Ecommerce", "2022"],
+    "requires_calculation": false
+  },
+  {
+    "id": "FQ05",
+    "question": "What were the depreciation expenses for Maresi GmbH in 2022?",
+    "category": "simple_fact",
+    "difficulty": "easy",
+    "expected_answer_contains": ["depreciation", "Maresi", "2022"],
+    "requires_calculation": false
+  },
+  {
+    "id": "FQ06",
+    "question": "Which company had the highest revenue in 2022?",
+    "category": "comparison",
+    "difficulty": "medium",
+    "expected_answer_contains": ["highest revenue", "2022"],
+    "requires_calculation": true
+  },
+  {
+    "id": "FQ07",
+    "question": "Which company had the lowest net profit in 2022?",
+    "category": "comparison",
+    "difficulty": "medium",
+    "expected_answer_contains": ["lowest net profit", "2022"],
+    "requires_calculation": true
+  },
+  {
+    "id": "FQ08",
+    "question": "What was the total revenue across all companies in 2022?",
+    "category": "aggregation",
+    "difficulty": "medium",
+    "expected_answer_contains": ["total revenue", "all companies", "2022"],
+    "requires_calculation": true
+  },
+  {
+    "id": "FQ09",
+    "question": "What was the average total assets across all companies in 2022?",
+    "category": "aggregation",
+    "difficulty": "medium",
+    "expected_answer_contains": ["average", "total assets", "2022"],
+    "requires_calculation": true
+  },
+  {
+    "id": "FQ10",
+    "question": "Which company had the highest equity-to-assets ratio in 2022?",
+    "category": "ratio_calculation",
+    "difficulty": "hard",
+    "expected_answer_contains": ["equity-to-assets ratio", "highest", "2022"],
+    "requires_calculation": true
+  },
+  {
+    "id": "FQ11",
+    "question": "What was the revenue growth rate for Bitpanda GmbH from the available data?",
+    "category": "trend_analysis",
+    "difficulty": "hard",
+    "expected_answer_contains": ["revenue growth", "Bitpanda"],
+    "requires_calculation": true
+  },
+  {
+    "id": "FQ12",
+    "question": "What percentage of total assets were current assets for Senna GmbH in 2022?",
+    "category": "percentage_calculation",
+    "difficulty": "hard",
+    "expected_answer_contains": [
+      "percentage",
+      "current assets",
+      "total assets",
+      "Senna",
+      "2022"
+    ],
+    "requires_calculation": true
+  },
+  {
+    "id": "FQ13",
+    "question": "What was the operating profit margin for Maresi GmbH in 2022?",
+    "category": "margin_calculation",
+    "difficulty": "hard",
+    "expected_answer_contains": ["operating profit margin", "Maresi", "2022"],
+    "requires_calculation": true
+  },
+  {
+    "id": "FQ14",
+    "question": "Which company had the highest depreciation expenses relative to revenue in 2022?",
+    "category": "relative_comparison",
+    "difficulty": "hard",
+    "expected_answer_contains": [
+      "depreciation",
+      "relative to revenue",
+      "highest",
+      "2022"
+    ],
+    "requires_calculation": true
+  },
+  {
+    "id": "FQ15",
+    "question": "What was the total interest expense across all companies in 2022?",
+    "category": "aggregation",
+    "difficulty": "medium",
+    "expected_answer_contains": [
+      "total interest expense",
+      "all companies",
+      "2022"
+    ],
+    "requires_calculation": true
+  },
+  {
+    "id": "FQ16",
+    "question": "What was the tax expense for Smarter Ecommerce GmbH in 2022?",
+    "category": "simple_fact",
+    "difficulty": "easy",
+    "expected_answer_contains": ["tax expense", "Smarter Ecommerce", "2022"],
+    "requires_calculation": false
+  },
+  {
+    "id": "FQ17",
+    "question": "Which company had the highest cash balance in 2022?",
+    "category": "comparison",
+    "difficulty": "medium",
+    "expected_answer_contains": ["highest cash balance", "2022"],
+    "requires_calculation": true
+  },
+  {
+    "id": "FQ18",
+    "question": "What was the total liabilities for Bitpanda GmbH in 2022?",
+    "category": "simple_fact",
+    "difficulty": "easy",
+    "expected_answer_contains": ["total liabilities", "Bitpanda", "2022"],
+    "requires_calculation": false
+  },
+  {
+    "id": "FQ19",
+    "question": "What was the gross profit for Senna GmbH in 2022?",
+    "category": "simple_fact",
+    "difficulty": "easy",
+    "expected_answer_contains": ["gross profit", "Senna", "2022"],
+    "requires_calculation": false
+  },
+  {
+    "id": "FQ20",
+    "question": "Which company had the lowest operating profit in 2022?",
+    "category": "comparison",
+    "difficulty": "medium",
+    "expected_answer_contains": ["lowest operating profit", "2022"],
+    "requires_calculation": true
+  },
+  {
+    "id": "FQ21",
+    "question": "What was the average net profit margin across all companies in 2022?",
+    "category": "margin_calculation",
+    "difficulty": "hard",
+    "expected_answer_contains": ["average", "net profit margin", "2022"],
+    "requires_calculation": true
+  },
+  {
+    "id": "FQ22",
+    "question": "What percentage of revenue was spent on interest expenses for Maresi GmbH in 2022?",
+    "category": "percentage_calculation",
+    "difficulty": "hard",
+    "expected_answer_contains": [
+      "percentage",
+      "interest expenses",
+      "revenue",
+      "Maresi",
+      "2022"
+    ],
+    "requires_calculation": true
+  },
+  {
+    "id": "FQ23",
+    "question": "What was the fixed assets to total assets ratio for Smarter Ecommerce GmbH in 2022?",
+    "category": "ratio_calculation",
+    "difficulty": "hard",
+    "expected_answer_contains": [
+      "fixed assets",
+      "total assets",
+      "ratio",
+      "Smarter Ecommerce",
+      "2022"
+    ],
+    "requires_calculation": true
+  },
+  {
+    "id": "FQ24",
+    "question": "Which company had the highest current assets in 2022?",
+    "category": "comparison",
+    "difficulty": "medium",
+    "expected_answer_contains": ["highest current assets", "2022"],
+    "requires_calculation": true
+  },
+  {
+    "id": "FQ25",
+    "question": "What was the total equity across all companies in 2022?",
+    "category": "aggregation",
+    "difficulty": "medium",
+    "expected_answer_contains": ["total equity", "all companies", "2022"],
+    "requires_calculation": true
+  },
+  {
+    "id": "FQ26",
+    "question": "What was the debt-to-equity ratio for Bitpanda GmbH in 2022?",
+    "category": "ratio_calculation",
+    "difficulty": "hard",
+    "expected_answer_contains": ["debt-to-equity ratio", "Bitpanda", "2022"],
+    "requires_calculation": true
+  },
+  {
+    "id": "FQ27",
+    "question": "Which company had the highest tax expense in 2022?",
+    "category": "comparison",
+    "difficulty": "medium",
+    "expected_answer_contains": ["highest tax expense", "2022"],
+    "requires_calculation": true
+  },
+  {
+    "id": "FQ28",
+    "question": "What was the return on assets (ROA) for Senna GmbH in 2022?",
+    "category": "ratio_calculation",
+    "difficulty": "hard",
+    "expected_answer_contains": ["return on assets", "ROA", "Senna", "2022"],
+    "requires_calculation": true
+  },
+  {
+    "id": "FQ29",
+    "question": "What was the total depreciation across all companies in 2022?",
+    "category": "aggregation",
+    "difficulty": "medium",
+    "expected_answer_contains": ["total depreciation", "all companies", "2022"],
+    "requires_calculation": true
+  },
+  {
+    "id": "FQ30",
+    "question": "Which company had the best profit margin (net profit/revenue) in 2022?",
+    "category": "margin_comparison",
+    "difficulty": "hard",
+    "expected_answer_contains": [
+      "best profit margin",
+      "net profit/revenue",
+      "2022"
+    ],
+    "requires_calculation": true
+  },
+  {
+    "id": "FQ31",
+    "question": "What was the cash conversion cycle efficiency for these companies based on available data?",
+    "category": "complex_analysis",
+    "difficulty": "very_hard",
+    "expected_answer_contains": ["cash conversion cycle", "efficiency"],
+    "requires_calculation": true,
+    "notes": "May require inference from multiple data points"
+  },
+  {
+    "id": "FQ32",
+    "question": "How did the financial leverage differ between technology companies (Bitpanda) and traditional companies in the dataset?",
+    "category": "sector_comparison",
+    "difficulty": "very_hard",
+    "expected_answer_contains": [
+      "financial leverage",
+      "technology",
+      "traditional",
+      "compare"
+    ],
+    "requires_calculation": true
+  },
+  {
+    "id": "FQ33",
+    "question": "What was the asset turnover ratio (revenue/total assets) for Maresi GmbH in 2022?",
+    "category": "ratio_calculation",
+    "difficulty": "hard",
+    "expected_answer_contains": [
+      "asset turnover",
+      "revenue/total assets",
+      "Maresi",
+      "2022"
+    ],
+    "requires_calculation": true
+  },
+  {
+    "id": "FQ34",
+    "question": "Which company had the most conservative accounting based on depreciation methods?",
+    "category": "accounting_policy",
+    "difficulty": "very_hard",
+    "expected_answer_contains": [
+      "conservative accounting",
+      "depreciation methods"
+    ],
+    "requires_calculation": false,
+    "notes": "Requires interpretation of accounting policies"
+  },
+  {
+    "id": "FQ35",
+    "question": "What was the interest coverage ratio for each company in 2022?",
+    "category": "ratio_calculation",
+    "difficulty": "hard",
+    "expected_answer_contains": ["interest coverage ratio", "2022"],
+    "requires_calculation": true
+  },
+  {
+    "id": "FQ36",
+    "question": "How did working capital management differ across the companies in 2022?",
+    "category": "working_capital",
+    "difficulty": "very_hard",
+    "expected_answer_contains": ["working capital", "management", "differ"],
+    "requires_calculation": true
+  },
+  {
+    "id": "FQ37",
+    "question": "What was the capital expenditure intensity for these companies based on available data?",
+    "category": "capex_analysis",
+    "difficulty": "very_hard",
+    "expected_answer_contains": ["capital expenditure", "intensity"],
+    "requires_calculation": true
+  },
+  {
+    "id": "FQ38",
+    "question": "Which company showed the most efficient use of assets based on financial ratios?",
+    "category": "efficiency_analysis",
+    "difficulty": "very_hard",
+    "expected_answer_contains": [
+      "efficient",
+      "use of assets",
+      "financial ratios"
+    ],
+    "requires_calculation": true
+  },
+  {
+    "id": "FQ39",
+    "question": "What was the sustainable growth rate potential for each company based on 2022 data?",
+    "category": "growth_analysis",
+    "difficulty": "very_hard",
+    "expected_answer_contains": ["sustainable growth rate", "potential"],
+    "requires_calculation": true
+  },
+  {
+    "id": "FQ40",
+    "question": "How did the capital structure (debt vs equity) differ between e-commerce and traditional companies?",
+    "category": "capital_structure",
+    "difficulty": "very_hard",
+    "expected_answer_contains": [
+      "capital structure",
+      "debt vs equity",
+      "e-commerce",
+      "traditional"
+    ],
+    "requires_calculation": true
+  }
+]

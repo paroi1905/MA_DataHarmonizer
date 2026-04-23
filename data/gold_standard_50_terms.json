@@ -1,0 +1,352 @@
+[
+  {
+    "category": "revenue_and_sales",
+    "german": "Umsatzerlöse",
+    "english": "revenue",
+    "difficulty": "easy",
+    "notes": "Standard term for revenue/sales"
+  },
+  {
+    "category": "revenue_and_sales",
+    "german": "Umsatz",
+    "english": "revenue",
+    "difficulty": "easy",
+    "notes": "Common abbreviation for Umsatzerlöse"
+  },
+  {
+    "category": "revenue_and_sales",
+    "german": "Netto-Umsatz",
+    "english": "revenue",
+    "difficulty": "medium",
+    "notes": "Net revenue/sales"
+  },
+  {
+    "category": "revenue_and_sales",
+    "german": "Brutto-Umsatz",
+    "english": "revenue",
+    "difficulty": "medium",
+    "notes": "Gross revenue/sales"
+  },
+  {
+    "category": "revenue_and_sales",
+    "german": "Erlöse",
+    "english": "revenue",
+    "difficulty": "medium",
+    "notes": "Alternative term for revenue"
+  },
+  {
+    "category": "profit_and_earnings",
+    "german": "Jahresüberschuss",
+    "english": "net_profit",
+    "difficulty": "easy",
+    "notes": "Annual net profit"
+  },
+  {
+    "category": "profit_and_earnings",
+    "german": "Jahresfehlbetrag",
+    "english": "net_profit",
+    "difficulty": "hard",
+    "notes": "Annual loss (negative net profit)"
+  },
+  {
+    "category": "profit_and_earnings",
+    "german": "Betriebsergebnis",
+    "english": "operating_profit",
+    "difficulty": "easy",
+    "notes": "Operating profit/result"
+  },
+  {
+    "category": "profit_and_earnings",
+    "german": "Betriebserfolg",
+    "english": "operating_profit",
+    "difficulty": "medium",
+    "notes": "Operating success/profit"
+  },
+  {
+    "category": "profit_and_earnings",
+    "german": "Zwischensumme Betriebserfolg",
+    "english": "operating_profit",
+    "difficulty": "hard",
+    "notes": "Subtotal operating profit"
+  },
+  {
+    "category": "profit_and_earnings",
+    "german": "Rohergebnis",
+    "english": "gross_profit",
+    "difficulty": "medium",
+    "notes": "Gross profit/result"
+  },
+  {
+    "category": "profit_and_earnings",
+    "german": "Bruttoergebnis",
+    "english": "gross_profit",
+    "difficulty": "medium",
+    "notes": "Gross result"
+  },
+  {
+    "category": "assets",
+    "german": "Bilanzsumme",
+    "english": "total_assets",
+    "difficulty": "easy",
+    "notes": "Total balance sheet sum"
+  },
+  {
+    "category": "assets",
+    "german": "Aktiva",
+    "english": "total_assets",
+    "difficulty": "easy",
+    "notes": "Assets side of balance sheet"
+  },
+  {
+    "category": "assets",
+    "german": "Gesamtvermögen",
+    "english": "total_assets",
+    "difficulty": "medium",
+    "notes": "Total assets/wealth"
+  },
+  {
+    "category": "assets",
+    "german": "Umlaufvermögen",
+    "english": "current_assets",
+    "difficulty": "medium",
+    "notes": "Current/circulating assets"
+  },
+  {
+    "category": "assets",
+    "german": "Anlagevermögen",
+    "english": "fixed_assets",
+    "difficulty": "medium",
+    "notes": "Fixed assets"
+  },
+  {
+    "category": "assets",
+    "german": "Sachanlagen",
+    "english": "fixed_assets",
+    "difficulty": "hard",
+    "notes": "Tangible fixed assets"
+  },
+  {
+    "category": "assets",
+    "german": "Finanzanlagen",
+    "english": "fixed_assets",
+    "difficulty": "hard",
+    "notes": "Financial fixed assets"
+  },
+  {
+    "category": "assets",
+    "german": "Liquide Mittel",
+    "english": "cash",
+    "difficulty": "medium",
+    "notes": "Liquid funds/cash"
+  },
+  {
+    "category": "assets",
+    "german": "Kassenbestand",
+    "english": "cash",
+    "difficulty": "hard",
+    "notes": "Cash balance"
+  },
+  {
+    "category": "equity_and_liabilities",
+    "german": "Eigenkapital",
+    "english": "equity",
+    "difficulty": "easy",
+    "notes": "Equity/own capital"
+  },
+  {
+    "category": "equity_and_liabilities",
+    "german": "Gezeichnetes Kapital",
+    "english": "equity",
+    "difficulty": "hard",
+    "notes": "Subscribed capital"
+  },
+  {
+    "category": "equity_and_liabilities",
+    "german": "Kapitalrücklage",
+    "english": "equity",
+    "difficulty": "hard",
+    "notes": "Capital reserve"
+  },
+  {
+    "category": "equity_and_liabilities",
+    "german": "Gewinnrücklagen",
+    "english": "equity",
+    "difficulty": "hard",
+    "notes": "Retained earnings"
+  },
+  {
+    "category": "equity_and_liabilities",
+    "german": "Fremdkapital",
+    "english": "total_liabilities",
+    "difficulty": "medium",
+    "notes": "Debt capital/liabilities"
+  },
+  {
+    "category": "equity_and_liabilities",
+    "german": "Verbindlichkeiten",
+    "english": "total_liabilities",
+    "difficulty": "medium",
+    "notes": "Liabilities/obligations"
+  },
+  {
+    "category": "equity_and_liabilities",
+    "german": "Langfristige Verbindlichkeiten",
+    "english": "total_liabilities",
+    "difficulty": "hard",
+    "notes": "Long-term liabilities"
+  },
+  {
+    "category": "equity_and_liabilities",
+    "german": "Kurzfristige Verbindlichkeiten",
+    "english": "total_liabilities",
+    "difficulty": "hard",
+    "notes": "Short-term liabilities"
+  },
+  {
+    "category": "expenses",
+    "german": "Abschreibungen",
+    "english": "depreciation",
+    "difficulty": "easy",
+    "notes": "Depreciation/amortization"
+  },
+  {
+    "category": "expenses",
+    "german": "Abschreibungen auf Sachanlagen",
+    "english": "depreciation",
+    "difficulty": "hard",
+    "notes": "Depreciation on tangible assets"
+  },
+  {
+    "category": "expenses",
+    "german": "Zinsaufwand",
+    "english": "interest_expense",
+    "difficulty": "medium",
+    "notes": "Interest expense"
+  },
+  {
+    "category": "expenses",
+    "german": "Finanzaufwand",
+    "english": "interest_expense",
+    "difficulty": "hard",
+    "notes": "Financial expense"
+  },
+  {
+    "category": "expenses",
+    "german": "Steueraufwand",
+    "english": "tax_expense",
+    "difficulty": "medium",
+    "notes": "Tax expense"
+  },
+  {
+    "category": "expenses",
+    "german": "Ertragssteuern",
+    "english": "tax_expense",
+    "difficulty": "hard",
+    "notes": "Income taxes"
+  },
+  {
+    "category": "expenses",
+    "german": "Personalaufwand",
+    "english": "unknown",
+    "difficulty": "hard",
+    "notes": "Personnel expense (not in UDM)"
+  },
+  {
+    "category": "expenses",
+    "german": "Materialaufwand",
+    "english": "unknown",
+    "difficulty": "hard",
+    "notes": "Material expense (not in UDM)"
+  },
+  {
+    "category": "financial_ratios",
+    "german": "Eigenkapitalquote",
+    "english": "unknown",
+    "difficulty": "hard",
+    "notes": "Equity ratio (calculated field)"
+  },
+  {
+    "category": "financial_ratios",
+    "german": "Verschuldungsgrad",
+    "english": "unknown",
+    "difficulty": "hard",
+    "notes": "Debt ratio (calculated field)"
+  },
+  {
+    "category": "financial_ratios",
+    "german": "Liquidität 1. Grades",
+    "english": "unknown",
+    "difficulty": "hard",
+    "notes": "Quick ratio (calculated field)"
+  },
+  {
+    "category": "financial_ratios",
+    "german": "Umsatzrendite",
+    "english": "unknown",
+    "difficulty": "hard",
+    "notes": "Return on sales (calculated field)"
+  },
+  {
+    "category": "metadata_and_dates",
+    "german": "Geschäftsjahr",
+    "english": "fiscal_year",
+    "difficulty": "easy",
+    "notes": "Fiscal/business year"
+  },
+  {
+    "category": "metadata_and_dates",
+    "german": "Bilanzstichtag",
+    "english": "unknown",
+    "difficulty": "medium",
+    "notes": "Balance sheet date (not in UDM)"
+  },
+  {
+    "category": "metadata_and_dates",
+    "german": "Unternehmensname",
+    "english": "company_name",
+    "difficulty": "easy",
+    "notes": "Company name"
+  },
+  {
+    "category": "metadata_and_dates",
+    "german": "Firmenname",
+    "english": "company_name",
+    "difficulty": "easy",
+    "notes": "Firm name"
+  },
+  {
+    "category": "metadata_and_dates",
+    "german": "Gesellschaftsform",
+    "english": "unknown",
+    "difficulty": "medium",
+    "notes": "Legal form (not in UDM)"
+  },
+  {
+    "category": "metadata_and_dates",
+    "german": "Sitz",
+    "english": "unknown",
+    "difficulty": "medium",
+    "notes": "Registered office (not in UDM)"
+  },
+  {
+    "category": "metadata_and_dates",
+    "german": "Geschäftsadresse",
+    "english": "unknown",
+    "difficulty": "medium",
+    "notes": "Business address (not in UDM)"
+  },
+  {
+    "category": "metadata_and_dates",
+    "german": "Handelsregister",
+    "english": "unknown",
+    "difficulty": "hard",
+    "notes": "Commercial register (not in UDM)"
+  },
+  {
+    "category": "metadata_and_dates",
+    "german": "USt-IdNr.",
+    "english": "unknown",
+    "difficulty": "hard",
+    "notes": "VAT ID number (not in UDM)"
+  }
+]

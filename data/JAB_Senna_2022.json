@@ -1,0 +1,386 @@
+{
+  "scheme" : "ugb",
+  "general-information" : {
+    "scope" : "individual",
+    "subject" : {
+      "type" : "company",
+      "name" : "SENNA Nahrungsmittel GmbH & Co KG",
+      "business-register-number" : "162895b"
+    },
+    "current-period" : {
+      "begin" : "2022-01-01",
+      "end" : "2022-12-31",
+      "value-representation" : {
+        "scaling" : 1,
+        "decimal-places" : 2
+      },
+      "size-category" : "large"
+    },
+    "previous-period" : {
+      "begin" : "2021-01-01",
+      "end" : "2021-12-31",
+      "value-representation" : {
+        "scaling" : 1000,
+        "decimal-places" : 0
+      }
+    },
+    "currency" : "EUR"
+  },
+  "structure" : {
+    "balance-sheet" : {
+      "type" : "full",
+      "positions" : [ {
+        "name" : "AKTIVA",
+        "value" : 34647670.23,
+        "previous-period-value" : 25350.0,
+        "well-known-position-type" : "assets",
+        "sub-positions" : [ {
+          "name" : "ANLAGEVERMOEGEN",
+          "value" : 6131439.86,
+          "previous-period-value" : 5993.0,
+          "well-known-position-type" : "non-current-assets",
+          "sub-positions" : [ {
+            "name" : "IMMATERIELLE_VERMOEGENSGEGENSTAENDE",
+            "value" : 320236.08,
+            "previous-period-value" : 253.0,
+            "sub-positions" : [ {
+              "name" : "KONZESSIONEN_GEWERBLICHE_SCHUTZRECHTE_UND_LIZENZEN",
+              "value" : 320236.08,
+              "previous-period-value" : 249.0
+            }, {
+              "name" : "GELEISTETE_ANZAHLUNGEN",
+              "value" : 0.0,
+              "previous-period-value" : 4.0
+            } ]
+          }, {
+            "name" : "SACHANLAGEN",
+            "value" : 5811203.78,
+            "previous-period-value" : 5740.0,
+            "well-known-position-type" : "property-plant-equipment",
+            "sub-positions" : [ {
+              "name" : "GRUNDSTUECKE_GRUNDSTUECKSGLEICHE_RECHTE_UND_BAUTEN",
+              "value" : 658489.27,
+              "previous-period-value" : 620.0
+            }, {
+              "name" : "TECHNISCHE_ANLAGEN_UND_MASCHINEN",
+              "value" : 4687226.04,
+              "previous-period-value" : 4510.0
+            }, {
+              "name" : "ANDERE_ANLAGEN_BETRIEBS_UND_GESCHAEFTSAUSSTATTUNG",
+              "value" : 345359.37,
+              "previous-period-value" : 384.0
+            }, {
+              "name" : "GELEISTETE_ANZAHLUNGEN_UND_ANLAGEN_IM_BAU",
+              "value" : 120129.1,
+              "previous-period-value" : 226.0
+            } ]
+          } ]
+        }, {
+          "name" : "UMLAUFVERMOEGEN",
+          "value" : 28413215.42,
+          "previous-period-value" : 19275.0,
+          "well-known-position-type" : "current-assets",
+          "sub-positions" : [ {
+            "name" : "VORRAETE",
+            "value" : 12586569.57,
+            "previous-period-value" : 7483.0,
+            "well-known-position-type" : "inventories",
+            "sub-positions" : [ {
+              "name" : "ROH_HILFS_UND_BETRIEBSSTOFFE",
+              "value" : 3992557.41,
+              "previous-period-value" : 2724.0
+            }, {
+              "name" : "FERTIGE_ERZEUGNISSE_UND_WAREN",
+              "value" : 8594012.16,
+              "previous-period-value" : 4759.0
+            } ]
+          }, {
+            "name" : "FORDERUNGEN_UND_SONSTIGE_VERMOEGENSGEGENSTAENDE",
+            "value" : 15773108.56,
+            "previous-period-value" : 11790.0,
+            "sub-positions" : [ {
+              "name" : "FORDERUNGEN_AUS_LIEFERUNGEN_UND_LEISTUNGEN",
+              "value" : 9537604.52,
+              "previous-period-value" : 7525.0
+            }, {
+              "name" : "FORDERUNGEN_GEGENUEBER_VERBUNDENEN_UNTERNEHMEN",
+              "value" : 5428279.46,
+              "previous-period-value" : 3229.0
+            }, {
+              "name" : "SONSTIGE_FORDERUNGEN_UND_VERMOEGENSGEGENSTAENDE",
+              "value" : 807224.58,
+              "previous-period-value" : 1036.0
+            } ]
+          }, {
+            "name" : "KASSENBESTAND_SCHECKS_GUTHABEN_BEI_KREDITINSTITUTEN",
+            "value" : 53537.29,
+            "previous-period-value" : 2.0,
+            "well-known-position-type" : "cash-and-cash-equivalents"
+          } ]
+        }, {
+          "name" : "AKTIVA_RECHNUNGSABGRENZUNGSPOSTEN",
+          "value" : 103014.95,
+          "previous-period-value" : 82.0
+        } ]
+      }, {
+        "name" : "PASSIVA",
+        "value" : 34647670.23,
+        "previous-period-value" : 25350.0,
+        "well-known-position-type" : "liabilities-and-equity",
+        "sub-positions" : [ {
+          "name" : "EIGENKAPITAL",
+          "value" : 4456951.96,
+          "previous-period-value" : 4189.0,
+          "well-known-position-type" : "equity",
+          "sub-positions" : [ {
+            "name" : "EINGEFORDERTES_KOMPLEMENTAERKAPITAL",
+            "value" : 0.0,
+            "previous-period-value" : 0.0
+          }, {
+            "name" : "KOMMANDITKAPITAL",
+            "value" : 4188941.29,
+            "previous-period-value" : 4578.0,
+            "sub-positions" : [ {
+              "name" : "BEDUNGENE_EINLAGEN",
+              "value" : 4578388.55,
+              "previous-period-value" : 4578.0
+            }, {
+              "name" : "KOMMANDITKAPITAL_ABZUEGLICH_VERLUSTANTEILE_AUS_VORJAHREN",
+              "value" : -389447.26,
+              "previous-period-value" : 0.0
+            } ]
+          }, {
+            "name" : "GEWINNRUECKLAGEN",
+            "value" : 0.0,
+            "previous-period-value" : 0.0
+          }, {
+            "name" : "BILANZGEWINN_BILANZVERLUST",
+            "value" : 268010.67,
+            "previous-period-value" : -389.0,
+            "well-known-position-type" : "distributable-profit"
+          } ]
+        }, {
+          "name" : "INVESTITIONSZUSCHUESSE",
+          "value" : 116068.31,
+          "previous-period-value" : 132.0
+        }, {
+          "name" : "RUECKSTELLUNGEN",
+          "value" : 4307444.41,
+          "previous-period-value" : 3148.0,
+          "well-known-position-type" : "provisions",
+          "sub-positions" : [ {
+            "name" : "RUECKSTELLUNGEN_FUER_ABFERTIGUNGEN",
+            "value" : 568974.51,
+            "previous-period-value" : 686.0
+          }, {
+            "name" : "SONSTIGE_RUECKSTELLUNGEN",
+            "value" : 3738469.9,
+            "previous-period-value" : 2462.0
+          } ]
+        }, {
+          "name" : "VERBINDLICHKEITEN",
+          "value" : 25767205.55,
+          "previous-period-value" : 17881.0,
+          "well-known-position-type" : "liabilities",
+          "sub-positions" : [ {
+            "name" : "DAVON_RESTLAUFZEIT_BIS_ZU_EINEM_JAHR",
+            "value" : 25767205.55,
+            "previous-period-value" : 17881.0
+          }, {
+            "name" : "DAVON_RESTLAUFZEIT_VON_MEHR_ALS_EINEM_JAHR",
+            "value" : 0.0,
+            "previous-period-value" : 0.0
+          }, {
+            "name" : "VERBINDLICHKEITEN_GEGENUEBER_KREDITINSTITUTEN",
+            "value" : 3925051.88,
+            "previous-period-value" : 10454.0,
+            "sub-positions" : [ {
+              "name" : "DAVON_RESTLAUFZEIT_BIS_ZU_EINEM_JAHR",
+              "value" : 3925051.88,
+              "previous-period-value" : 10454.0
+            } ]
+          }, {
+            "name" : "VERBINDLICHKEITEN_AUS_LIEFERUNGEN_UND_LEISTUNGEN",
+            "value" : 10402229.19,
+            "previous-period-value" : 6728.0,
+            "sub-positions" : [ {
+              "name" : "DAVON_RESTLAUFZEIT_BIS_ZU_EINEM_JAHR",
+              "value" : 10402229.19,
+              "previous-period-value" : 6728.0
+            } ]
+          }, {
+            "name" : "VERBINDLICHKEITEN_GEGENUEBER_VERBUNDENEN_UNTERNEHMEN",
+            "value" : 10738396.55,
+            "previous-period-value" : 280.0,
+            "sub-positions" : [ {
+              "name" : "DAVON_RESTLAUFZEIT_BIS_ZU_EINEM_JAHR",
+              "value" : 10738396.55,
+              "previous-period-value" : 280.0
+            } ]
+          }, {
+            "name" : "SONSTIGE_VERBINDLICHKEITEN",
+            "value" : 701527.93,
+            "previous-period-value" : 419.0,
+            "sub-positions" : [ {
+              "name" : "DAVON_AUS_STEUERN",
+              "value" : 397890.27,
+              "previous-period-value" : 165.0
+            }, {
+              "name" : "DAVON_IM_RAHMEN_DER_SOZIALEN_SICHERHEIT",
+              "value" : 202071.84,
+              "previous-period-value" : 199.0
+            }, {
+              "name" : "DAVON_RESTLAUFZEIT_BIS_ZU_EINEM_JAHR",
+              "value" : 701527.93,
+              "previous-period-value" : 419.0
+            }, {
+              "name" : "DAVON_RESTLAUFZEIT_VON_MEHR_ALS_EINEM_JAHR",
+              "value" : 0.0,
+              "previous-period-value" : 0.0
+            } ]
+          } ]
+        } ]
+      } ]
+    },
+    "profit-loss-statement" : {
+      "type" : "nature-of-expense-method",
+      "positions" : [ {
+        "name" : "BILANZ_GEWINN_VERLUST",
+        "value" : 268010.67,
+        "previous-period-value" : -389.0,
+        "well-known-position-type" : "distributable-profit",
+        "sub-positions" : [ {
+          "name" : "JAHRESUEBERSCHUSS_JAHRESFEHLBETRAG",
+          "value" : 268010.67,
+          "previous-period-value" : -1133.0,
+          "well-known-position-type" : "net-income",
+          "sub-positions" : [ {
+            "name" : "ERGEBNIS_NACH_STEUERN",
+            "value" : 268010.67,
+            "previous-period-value" : -1133.0,
+            "well-known-position-type" : "eat",
+            "sub-positions" : [ {
+              "name" : "ERGEBNIS_VOR_STEUERN",
+              "value" : 268010.67,
+              "previous-period-value" : -1133.0,
+              "well-known-position-type" : "ebt",
+              "sub-positions" : [ {
+                "name" : "ZWISCHENSUMME_BETRIEBSERFOLG",
+                "value" : 438189.62,
+                "previous-period-value" : -1041.0,
+                "well-known-position-type" : "ebit",
+                "sub-positions" : [ {
+                  "name" : "UMSATZERLOESE",
+                  "value" : 88564984.73,
+                  "previous-period-value" : 63566.0,
+                  "well-known-position-type" : "revenue"
+                }, {
+                  "name" : "VERAENDERUNG_DES_BESTANDS_AN_ERZEUGNISSEN_UND_LEISTUNGEN",
+                  "value" : 3643327.61,
+                  "previous-period-value" : 687.0
+                }, {
+                  "name" : "AUFWENDUNGEN_FUER_HERSTELLUNGSLEISTUNGEN",
+                  "value" : -75367611.37,
+                  "previous-period-value" : -51322.0,
+                  "sub-positions" : [ {
+                    "name" : "MATERIALAUFWAND",
+                    "value" : -73885156.12,
+                    "previous-period-value" : -49929.0
+                  }, {
+                    "name" : "AUFWENDUNGEN_FUER_BEZOGENE_LEISTUNGEN",
+                    "value" : -1482455.25,
+                    "previous-period-value" : -1393.0
+                  } ]
+                }, {
+                  "name" : "SONSTIGE_BETRIEBLICHE_ERTRAEGE",
+                  "value" : 602589.19,
+                  "previous-period-value" : 1652.0,
+                  "sub-positions" : [ {
+                    "name" : "ERTRAEGE_AUS_ABGANG_UND_ZUSCHREIBUNG_ZUM_ANLAGEVERMOEGEN",
+                    "value" : 31460.84,
+                    "previous-period-value" : 39.0
+                  }, {
+                    "name" : "ERTRAEGE_AUS_AUFLOESUNG_VON_RUECKSTELLUNGEN",
+                    "value" : 413896.68,
+                    "previous-period-value" : 179.0
+                  }, {
+                    "name" : "UEBRIGE",
+                    "value" : 157231.67,
+                    "previous-period-value" : 1434.0
+                  } ]
+                }, {
+                  "name" : "PERSONALAUFWAND",
+                  "value" : -8626509.92,
+                  "previous-period-value" : -8406.0,
+                  "sub-positions" : [ {
+                    "name" : "LOEHNE",
+                    "value" : -1962021.09,
+                    "previous-period-value" : -2000.0
+                  }, {
+                    "name" : "GEHAELTER",
+                    "value" : -4701794.81,
+                    "previous-period-value" : -4418.0
+                  }, {
+                    "name" : "SOZIALE_AUFWENDUNGEN",
+                    "value" : -1962694.02,
+                    "previous-period-value" : -1988.0,
+                    "sub-positions" : [ {
+                      "name" : "DAVON_AUFWENDUNGEN_FUER_LEISTUNGEN_AN_MITARBEITERVORSORGEKASSEN",
+                      "value" : -109965.73,
+                      "previous-period-value" : -110.0
+                    }, {
+                      "name" : "DAVON_AUFWENDUNGEN_FUER_SOZIALABGABEN",
+                      "value" : -1801306.62,
+                      "previous-period-value" : -1855.0
+                    } ]
+                  } ]
+                }, {
+                  "name" : "ABSCHREIBUNGEN",
+                  "value" : -1189581.91,
+                  "previous-period-value" : -1177.0,
+                  "sub-positions" : [ {
+                    "name" : "GEGENSTAENDE_DES_ANLAGEVERMOEGENS_UND_SACHANLAGEN",
+                    "value" : -1189581.91,
+                    "previous-period-value" : -1177.0
+                  } ]
+                }, {
+                  "name" : "SONSTIGE_BETRIEBLICHE_AUFWENDUNGEN",
+                  "value" : -7189008.71,
+                  "previous-period-value" : -6041.0,
+                  "sub-positions" : [ {
+                    "name" : "DAVON_STEUERN",
+                    "value" : -37770.75,
+                    "previous-period-value" : -29.0
+                  } ]
+                } ]
+              }, {
+                "name" : "ZWISCHENSUMME_FINANZERFOLG",
+                "value" : -170178.95,
+                "previous-period-value" : -92.0,
+                "well-known-position-type" : "net-financial-result",
+                "sub-positions" : [ {
+                  "name" : "SONSTIGE_ZINSEN_UND_AEHNLICHE_ERTRAEGE",
+                  "value" : 0.0,
+                  "previous-period-value" : 0.0
+                }, {
+                  "name" : "ZINSEN_UND_AEHNLICHE_AUFWENDUNGEN",
+                  "value" : -170178.95,
+                  "previous-period-value" : -92.0,
+                  "sub-positions" : [ {
+                    "name" : "DAVON_BETREFFEND_VERBUNDENE_UNTERNEHMEN",
+                    "value" : -170178.95,
+                    "previous-period-value" : -92.0
+                  } ]
+                } ]
+              } ]
+            } ]
+          } ]
+        }, {
+          "name" : "AUFLOESUNG_VON_GEWINNRUECKLAGEN",
+          "value" : 0.0,
+          "previous-period-value" : 744.0
+        } ]
+      } ]
+    }
+  }
+}
