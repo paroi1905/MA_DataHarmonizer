@@ -1,7 +1,5 @@
 # Financial RAG Assistant Prototype
 
-Master's Thesis — Patrick Roith, BSc.
-
 This is a Retrieval-Augmented Generation (RAG) framework designed to ingest, semantically map, chunk, and query heterogeneous annual financial reports (PDFs and JSONs) from Austrian companies.
 
 ## 🏗 Modular Architecture
