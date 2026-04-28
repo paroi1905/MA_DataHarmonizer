@@ -97,6 +97,7 @@ def enrich_metadata(udms: List[UnifiedDocumentModel]) -> List[UnifiedDocumentMod
         if match:
             raw_company = match.group(1).replace("_", " ")
             company = " ".join([word.capitalize() for word in raw_company.split(" ")])
+            company = re.sub(r'^Jab\s+', '', company, flags=re.IGNORECASE)
             year = int(match.group(2))
         udm["company_name"] = company
         udm["fiscal_year"] = year

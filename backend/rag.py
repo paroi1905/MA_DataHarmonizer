@@ -56,7 +56,11 @@ def get_retriever(company_filter=None):
     return vectorstore.as_retriever(search_kwargs=search_kwargs)
 
 def detect_company(query: str) -> str | None:
-    known = {"Bitpanda": "Jab Bitpanda", "Maresi": "Jab Maresi", "Senna": "Jab Senna", "Smarter Ecommerce": "Jab Smarter Ecommerce"}
+    known = {"Bitpanda": "Bitpanda",
+             "Maresi": "Maresi",
+             "Senna": "Senna",
+             "Smarter Ecommerce": "Smarter Ecommerce Gmbh"
+            }
     for partial_name, stored_name in known.items():
         if partial_name.lower() in query.lower():
             return stored_name

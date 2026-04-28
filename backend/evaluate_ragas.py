@@ -50,7 +50,7 @@ FAITHFULNESS_THRESHOLD = 0.85  # 85%
 
 def load_questions() -> List[str]:
     """Load faithfulness questions from JSON file."""
-    data_path = os.path.join(os.path.dirname(__file__), "..", "data", "faithfulness_questions.json")
+    data_path = os.path.join(os.path.dirname(__file__), "..", "data", "evaluation", "faithfulness_questions.json")
     
     if not os.path.exists(data_path):
         print(f"ERROR: Questions file not found at {data_path}")
@@ -138,7 +138,7 @@ def collect_ragas_data() -> List[Dict[str, Any]]:
             })
     
     # Save collected data
-    output_path = os.path.join(os.path.dirname(__file__), "..", "data", "ragas_evaluation_data.json")
+    output_path = os.path.join(os.path.dirname(__file__), "..", "data", "evaluation", "ragas_evaluation_data.json")
     with open(output_path, "w", encoding="utf-8") as f:
         json.dump({
             "evaluation_date": datetime.now().isoformat(),
@@ -297,7 +297,7 @@ def save_final_results(ragas_scores: Dict[str, Any]) -> None:
     }
     
     # Save results
-    results_path = os.path.join(os.path.dirname(__file__), "..", "data", "ragas_results.json")
+    results_path = os.path.join(os.path.dirname(__file__), "..", "data", "evaluation", "ragas_results.json")
     with open(results_path, "w", encoding="utf-8") as f:
         json.dump(results, f, indent=2)
     
