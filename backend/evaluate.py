@@ -53,7 +53,7 @@ def eval_semantic_mapping():
     print("="*50)
     
     # Use the new 50-term gold standard dataset
-    data_path = os.path.join(os.path.dirname(__file__), "..", "data", "gold_standard_50_terms.json")
+    data_path = os.path.join(os.path.dirname(__file__), "..", "data", "evaluation", "gold_standard_50_terms.json")
     if not os.path.exists(data_path):
         print(f"ERROR: Gold standard dataset not found at {data_path}")
         print("Please create the 50-term dataset first.")
@@ -173,7 +173,7 @@ def eval_faithfulness():
     print("="*50)
     
     # Use the comprehensive faithfulness questions
-    data_path = os.path.join(os.path.dirname(__file__), "..", "data", "faithfulness_questions.json")
+    data_path = os.path.join(os.path.dirname(__file__), "..", "data", "evaluation", "faithfulness_questions.json")
     if not os.path.exists(data_path):
         print(f"ERROR: Faithfulness questions not found at {data_path}")
         print("Please create the faithfulness questions dataset first.")
@@ -268,7 +268,7 @@ def eval_faithfulness():
     print(f"Success: {success}")
     
     # Save detailed results for analysis
-    results_path = os.path.join(os.path.dirname(__file__), "..", "data", "faithfulness_results.json")
+    results_path = os.path.join(os.path.dirname(__file__), "..", "data", "evaluation", "faithfulness_results.json")
     with open(results_path, "w") as f:
         json.dump({
             "total_questions": len(questions),
