@@ -14,7 +14,7 @@ This is a Retrieval-Augmented Generation (RAG) framework designed to ingest, sem
 ```bash
 # 1. Clone and enter the project
 git clone <repo-url>
-cd MA_MVP_Prototype_TEST
+cd MA_DataHarmonizer
 
 # 2. Create virtual environment
 python3 -m venv venv

@@ -9,10 +9,9 @@ chromadb>=0.4.22
 pypdf>=4.0.0
 python-dotenv>=1.0.0
 pydantic>=2.0.0
-# Ensure we have required sqlite3 bits or tokenizers
+
 tiktoken>=0.6.0
 
-# RAGAS evaluation framework
 ragas>=0.1.0
 datasets>=2.14.0
 openai>=1.0.0
