@@ -85,16 +85,27 @@ def create_rag_chain():
         answer = chain.invoke({"context": context_str, "question": query})
         
         # Extract metadata for citations
-        sources = []
-        for d in docs:
-            sources.append({
-                "company": d.metadata.get("company", "Unknown"),
-                "year": d.metadata.get("year", 0), 
-                "file": d.metadata.get("file", "Unknown")
-            })
-            
-        unique_sources = [dict(t) for t in {tuple(s.items()) for s in sources}]
-        
+        # Only show sources if LLM actually answered the question
+        cannot_answer_phrases = [
+            "cannot answer",
+            "can't answer",
+            "not able to answer",
+            "no information",
+            "not found in"
+        ]
+
+        if any(phrase in answer.lower() for phrase in cannot_answer_phrases):
+            unique_sources = []
+        else:
+            sources = []
+            for d in docs:
+                sources.append({
+                    "company": d.metadata.get("company", "Unknown"),
+                    "year": d.metadata.get("year", 0),
+                    "file": d.metadata.get("file", "Unknown")
+                })
+            unique_sources = [dict(t) for t in {tuple(s.items()) for s in sources}]
+
         return {
             "answer": answer,
             "sources": unique_sources,
