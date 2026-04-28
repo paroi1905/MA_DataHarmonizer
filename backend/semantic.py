@@ -67,22 +67,24 @@ def map_fields(udms: List[UnifiedDocumentModel], mapping_dict: dict) -> List[Uni
 # --- 2. Semantic Chunking ---
 class RateLimitedEmbeddings(OpenAIEmbeddings):
     def embed_documents(self, texts, chunk_size=50, **kwargs):
-        print(f"Embedding {len(texts)} segments in batches to respect rate limits...")
+        print(f"Embedding {len(texts)} segments in batches...")
         results = []
         for i in range(0, len(texts), chunk_size):
             batch = texts[i:i+chunk_size]
-            try:
-                res = super().embed_documents(batch, chunk_size=chunk_size, **kwargs)
-                results.extend(res)
-            except Exception as e:
-                if "429" in str(e) or "quota" in str(e).lower() or "rate_limit" in str(e).lower():
-                    print("Hit TPM rate limit, sleeping 30 seconds...")
-                    time.sleep(30)
+            MAX_RETRIES = 5
+            for attempt in range(MAX_RETRIES):
+                try:
                     res = super().embed_documents(batch, chunk_size=chunk_size, **kwargs)
                     results.extend(res)
-                else:
-                    raise e
-            time.sleep(1) # tiny delay between batches
+                    break
+                except Exception as e:
+                    if "429" in str(e) or "quota" in str(e).lower() or "rate_limit" in str(e).lower():
+                        wait_time = 30 * (attempt + 1)
+                        print(f"Rate limit hit. Sleeping {wait_time}s... (Attempt {attempt+1}/{MAX_RETRIES})")
+                        time.sleep(wait_time)
+                    else:
+                        raise e
+            time.sleep(2)
         return results
 
 def chunk_documents(udms: List[UnifiedDocumentModel]):
