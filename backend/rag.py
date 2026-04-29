@@ -106,7 +106,7 @@ def create_rag_chain():
                 sources.append({
                     "company": d.metadata.get("company", "Unknown"),
                     "year": d.metadata.get("year", 0),
-                    "file": d.metadata.get("file", "Unknown")
+                    "file": d.metadata.get("file", "Unknown"),
                 })
             unique_sources = [dict(t) for t in {tuple(s.items()) for s in sources}]
 
