@@ -1,5 +1,5 @@
 {
-  "evaluation_date": "2026-04-28T15:00:30.860127",
+  "evaluation_date": "2026-04-30T09:21:58.023930",
   "total_questions": 30,
   "questions": [
     {
@@ -15,12 +15,12 @@
         {
           "company": "Bitpanda",
           "year": 2022,
-          "file": "JAB_Bitpanda_2022.json"
+          "file": "JAB_Bitpanda_2022.pdf"
         },
         {
           "company": "Bitpanda",
           "year": 2022,
-          "file": "JAB_Bitpanda_2022.pdf"
+          "file": "JAB_Bitpanda_2022.json"
         }
       ],
       "confidence": 0.9
@@ -61,12 +61,12 @@
         {
           "company": "Senna",
           "year": 2022,
-          "file": "JAB_Senna_2022.json"
+          "file": "JAB_Senna_2022.pdf"
         },
         {
           "company": "Senna",
           "year": 2022,
-          "file": "JAB_Senna_2022.pdf"
+          "file": "JAB_Senna_2022.json"
         }
       ],
       "confidence": 0.9
@@ -96,19 +96,19 @@
         {
           "company": "Bitpanda",
           "year": 2022,
-          "file": "JAB_Bitpanda_2022.json"
+          "file": "JAB_Bitpanda_2022.pdf"
         },
         {
           "company": "Bitpanda",
           "year": 2022,
-          "file": "JAB_Bitpanda_2022.pdf"
+          "file": "JAB_Bitpanda_2022.json"
         }
       ],
       "confidence": 0.9
     },
     {
       "question": "What were the total assets of Maresi GmbH in 2022?",
-      "answer": "The total assets of Maresi GmbH in 2022 were 35,910,756.31 \u20ac.",
+      "answer": "The total assets of Maresi GmbH in 2022 were 35,910,756.31 EUR.",
       "contexts": [
         "Financial Data for Maresi in the year 2022:\n- Revenue: 89800344.92\n- Operating Profit: -129902.71\n- Net Profit: 674979.04\n- Interest Expense: -21238.52\n- Tax Expense: -118933.62\n- Depreciation: -337215.26\n- Total Assets: 35910756.31\n- Current Assets: 25846225.33\n- Fixed Assets: -337215.26\n- Total Liabilities: 5207949.48\n- Equity: 20432566.56\n- Cash: 1137.48\n",
         "MARESI Austria GmbH, 161846i Stand: 29.09.2023 | Quelle: WIRTSCHAFTSCOMPASS\nCompass-Datenbank GmbH\nMARESI Austria GmbH, 161846i COMPASS-\nJAHRESABSCHLUSS\nBilanzgewinn:\n10,443,428.62 \u20ac\nBilanzsumme:\n35,910,756.31 \u20ac\nEigenkapital:\n20,432,566.56 \u20ac\nFremdkapital:\n15,478,189.75 \u20ac\nBilanz\nAktiva 31.12.2022 (EUR) 31.12.2021 (EUR)\nAnlageverm\u00f6gen 9,697,035.02 9,148,118.32\nImmaterielle Verm\u00f6gensgegenst\u00e4nde 1,033,571.68 258,473.55\nKonzessionen, gewerbliche Schutzrechte und \u00e4hnliche\nRechte und Vorteile sowie daraus abgeleitete Lizenzen 1,033,571.68 258,473.55\nSachanlagen 420,601.81 605,125.40\nGrundst\u00fccke, grundst\u00fccksgleiche Rechte und Bauten,\neinschlie\u00dflich der Bauten auf fremdem Grund 5,175.03 6,864.09\nandere Anlagen, Betriebs- und Gesch\u00e4ftsausstattung 415,426.78 598,261.31\nFinanzanlagen 8,242,861.53 8,284,519.37\nAnteile an verbundenen Unternehmen 7,560,980.84 7,560,980.84\nsonstige Ausleihungen 681,880.69 723,538.53\nUmlaufverm\u00f6gen 25,846,225.33 24,160,401.89\nVorr\u00e4te 6,426,286.25 5,491,816.21\nRoh-, Hilfs- und Betriebsstoffe 239,698.91 310,284.93\nfertige Erzeugnisse und Waren 6,186,587.34 5,181,531.28\nForderungen und sonstige Verm\u00f6gensgegenst\u00e4nde 19,418,801.60 9,720,821.86\nForderungen aus Lieferungen und Leistungen 9,391,608.69 8,479,962.69\nForderungen gegen\u00fcber verbundenen Unternehmen 9,016,038.70 378,445.81\nFreier Posten 85,853.62 94,653.61\nsonstige Forderungen und Verm\u00f6gensgegenst\u00e4nde 925,300.59 767,759.75\nKassenbestand, Schecks, Guthaben bei Kreditinstituten 1,137.48 8,947,763.82\nRechnungsabgrenzungsposten 165,245.56 101,346.73\nAktive latente Steuern 202,250.40 319,434.02\nSumme 35,910,756.31 33,729,300.96\nErstelldatum: 22.01.2026 15:11 | Benutzer: Compass Servicedesk\n[compass]\nCOMPASS-JAHRESABSCHLUSS 1 von 4\nMARESI Austria GmbH, 161846i Stand: 29.09.2023 | Quelle: WIRTSCHAFTSCOMPASS\nCompass-Datenbank GmbH\nPassiva 31.12.2022 (EUR) 31.12.2021 (EUR)\nEigenkapital / Negatives Eigenkapital 20,432,566.56 19,757,587.52\neingefordertes Stammkapital 250,000.00 250,000.00\nStammkapital 250,000.00 250,000.00\ndavon eingezahlt 250,000.00 250,000.00\nKapitalr\u00fccklagen 9,704,137.94 9,704,137.94\nnicht gebundene 9,704,137.94 9,704,137.94\nGewinnr\u00fccklagen 35,000.00 35,000.00\ngesetzliche R\u00fccklage 25,000.00 25,000.00\nandere R\u00fccklagen (freie R\u00fccklagen) 10,000.00 10,000.00\nBilanzgewinn / Verlust 10,443,428.62 9,768,449.58\nInvestitionszusch\u00fcsse 4,383.51 7,075.11\nR\u00fcckstellungen 3,531,074.18 4,153,531.99\nR\u00fcckstellungen f\u00fcr Abfertigungen 326,343.11 356,196.22\nR\u00fcckstellungen f\u00fcr Pensionen 1,832,461.23 1,960,967.16\nsonstige R\u00fcckstellungen 1,372,269.84 1,836,368.61\nVerbindlichkeiten 11,937,341.08 9,805,918.48\nVerbindlichkeiten gegen\u00fcber Kreditinstituten 10.73 0.00\nVerbindlichkeiten aus Lieferungen und Leistungen 5,723,626.30 4,427,094.58\ndavon mit einer Restlaufzeit bis zu einem Jahr 5,723,626.30 4,427,094.58\nVerbindlichkeiten gegen\u00fcber verbundenen Unternehmen 1,005,754.57 850,687.20\ndavon mit einer Restlaufzeit bis zu einem Jahr 1,004,004.57 850,687.20\nsonstige Verbindlichkeiten 5,207,949.48 4,528,136.70\ndavon aus Steuern 94,832.46 299,741.17\ndavon im Rahmen der sozialen Sicherheit 118,982.43 120,482.26\ndavon mit einer Restlaufzeit bis zu einem Jahr 5,207,949.48 4,528,136.70\nRechnungsabgrenzungsposten 5,390.98 5,187.86\nSumme 35,910,756.31 33,729,300.96\nErstelldatum: 22.01.2026 15:11 | Benutzer: Compass Servicedesk\n[compass]\nCOMPASS-JAHRESABSCHLUSS 2 von 4\nMARESI Austria GmbH, 161846i Stand: 29.09.2023 | Quelle: WIRTSCHAFTSCOMPASS\nCompass-Datenbank GmbH\nBilanzgewinn:\n10,443,428.62 \u20ac\nJahres\u00fcberschuss:\n674,979.04 \u20ac\nUmsatz:\n89,800,344.92 \u20ac\nEBIT:\n-129,902.71 \u20ac\nGewinn- und Verlustrechnung (nach Gesamtkostenverfahren)\nGewinn- und Verlustrechnung 31.12.2022 (EUR) 31.12.2021 (EUR)\nUmsatzerl\u00f6se 89,800,344.92 80,581,388.68\nAufwendungen f\u00fcr Material und sonstige bezogene\nHerstellungsleistungen -67,141,665.07 -59,762,731.26\nMaterialaufwand -66,434,340.68 -59,049,824.66\nAufwendungen f\u00fcr bezogene Leistungen -707,324.39 -712,906.60\nsonstige betriebliche Ertr\u00e4ge 945,027.19 958,069.41\nErtr\u00e4ge aus dem Abgang vom und der Zuschreibung\nzum Anlageverm\u00f6gen mit Ausnahme der Finanzanlagen 20,397.67 23,095.33\nErtr\u00e4ge aus der Aufl\u00f6sung von R\u00fcckstellungen 463,884.03 386,536.49\n\u00fcbrige 460,745.49 548,437.59\nPersonalaufwand -5,825,213.74 -6,115,346.96\nGeh\u00e4lter -4,591,402.72 -4,602,373.87\nsoziale Aufwendungen -1,233,811.02 -1,512,973.09\ndavon Aufwendungen f\u00fcr Altersversorgung -4,468.53 21,471.17\ndavon Aufwendungen f\u00fcr Abfertigungen und\nLeistungen an betriebliche Mitarbeitervorsorgekassen 21,943.26 -259,820.50\ndavon Aufwendungen f\u00fcr gesetzlich vorgeschriebene\nSozialabgaben sowie vom Entgelt abh\u00e4ngige\nAbgaben und Pflichtbeitr\u00e4ge\n-1,194,027.35 -1,223,488.67\nFreier Posten -57,258.40 -51,135.09\nAbschreibungen -337,215.26 -377,743.76\nauf immaterielle Gegenst\u00e4nde des Anlageverm\u00f6gens\nund Sachanlagen -337,215.26 -377,743.76\nsonstige betriebliche Aufwendungen -17,571,180.75 -15,392,451.03\nZwischensumme - Betriebserfolg -129,902.71 -108,814.92\nErtr\u00e4ge aus Beteiligungen 943,000.00 1,385,000.00\nsonstige Zinsen und \u00e4hnliche Ertr\u00e4ge 2,053.89 0.00\nZinsen und \u00e4hnliche Aufwendungen -21,238.52 -33,812.54\nZwischensumme - Finanzerfolg 923,815.37 1,351,187.46\nErgebnis vor Steuern 793,912.66 1,242,372.54\nSteuern vom Einkommen und vom Ertrag -118,933.62 -30,179.04\nErgebnis nach Steuern 674,979.04 1,212,193.50\nJahres\u00fcberschuss/Jahresfehlbetrag 674,979.04 1,212,193.50\nGewinn-/Verlustvortrag aus dem Vorjahr 9,768,449.58 8,556,256.08\nBilanzgewinn/Bilanzverlust 10,443,428.62 9,768,449.58\nErstelldatum: 22.01.2026 15:11 | Benutzer: Compass Servicedesk\n[compass]\nCOMPASS-JAHRESABSCHLUSS 3 von 4\nMARESI Austria GmbH, 161846i Stand: 29.09.2023 | Quelle: WIRTSCHAFTSCOMPASS\nCompass-Datenbank GmbH\nErstelldatum: 22.01.2026 15:11 | Benutzer: Compass Servicedesk\n[compass]\nCOMPASS-JAHRESABSCHLUSS 4 von 4",
@@ -142,12 +142,12 @@
         {
           "company": "Senna",
           "year": 2022,
-          "file": "JAB_Senna_2022.json"
+          "file": "JAB_Senna_2022.pdf"
         },
         {
           "company": "Senna",
           "year": 2022,
-          "file": "JAB_Senna_2022.pdf"
+          "file": "JAB_Senna_2022.json"
         }
       ],
       "confidence": 0.9
@@ -188,12 +188,12 @@
         {
           "company": "Bitpanda",
           "year": 2022,
-          "file": "JAB_Bitpanda_2022.json"
+          "file": "JAB_Bitpanda_2022.pdf"
         },
         {
           "company": "Bitpanda",
           "year": 2022,
-          "file": "JAB_Bitpanda_2022.pdf"
+          "file": "JAB_Bitpanda_2022.json"
         }
       ],
       "confidence": 0.9
@@ -234,12 +234,12 @@
         {
           "company": "Senna",
           "year": 2022,
-          "file": "JAB_Senna_2022.json"
+          "file": "JAB_Senna_2022.pdf"
         },
         {
           "company": "Senna",
           "year": 2022,
-          "file": "JAB_Senna_2022.pdf"
+          "file": "JAB_Senna_2022.json"
         }
       ],
       "confidence": 0.9
@@ -280,12 +280,12 @@
         {
           "company": "Bitpanda",
           "year": 2022,
-          "file": "JAB_Bitpanda_2022.json"
+          "file": "JAB_Bitpanda_2022.pdf"
         },
         {
           "company": "Bitpanda",
           "year": 2022,
-          "file": "JAB_Bitpanda_2022.pdf"
+          "file": "JAB_Bitpanda_2022.json"
         }
       ],
       "confidence": 0.9
@@ -326,12 +326,12 @@
         {
           "company": "Senna",
           "year": 2022,
-          "file": "JAB_Senna_2022.json"
+          "file": "JAB_Senna_2022.pdf"
         },
         {
           "company": "Senna",
           "year": 2022,
-          "file": "JAB_Senna_2022.pdf"
+          "file": "JAB_Senna_2022.json"
         }
       ],
       "confidence": 0.9
@@ -372,12 +372,12 @@
         {
           "company": "Bitpanda",
           "year": 2022,
-          "file": "JAB_Bitpanda_2022.json"
+          "file": "JAB_Bitpanda_2022.pdf"
         },
         {
           "company": "Bitpanda",
           "year": 2022,
-          "file": "JAB_Bitpanda_2022.pdf"
+          "file": "JAB_Bitpanda_2022.json"
         }
       ],
       "confidence": 0.9
@@ -418,12 +418,12 @@
         {
           "company": "Senna",
           "year": 2022,
-          "file": "JAB_Senna_2022.json"
+          "file": "JAB_Senna_2022.pdf"
         },
         {
           "company": "Senna",
           "year": 2022,
-          "file": "JAB_Senna_2022.pdf"
+          "file": "JAB_Senna_2022.json"
         }
       ],
       "confidence": 0.9
@@ -464,12 +464,12 @@
         {
           "company": "Bitpanda",
           "year": 2022,
-          "file": "JAB_Bitpanda_2022.json"
+          "file": "JAB_Bitpanda_2022.pdf"
         },
         {
           "company": "Bitpanda",
           "year": 2022,
-          "file": "JAB_Bitpanda_2022.pdf"
+          "file": "JAB_Bitpanda_2022.json"
         }
       ],
       "confidence": 0.9
@@ -510,12 +510,12 @@
         {
           "company": "Senna",
           "year": 2022,
-          "file": "JAB_Senna_2022.json"
+          "file": "JAB_Senna_2022.pdf"
         },
         {
           "company": "Senna",
           "year": 2022,
-          "file": "JAB_Senna_2022.pdf"
+          "file": "JAB_Senna_2022.json"
         }
       ],
       "confidence": 0.9
@@ -597,12 +597,12 @@
         {
           "company": "Senna",
           "year": 2022,
-          "file": "JAB_Senna_2022.json"
+          "file": "JAB_Senna_2022.pdf"
         },
         {
           "company": "Senna",
           "year": 2022,
-          "file": "JAB_Senna_2022.pdf"
+          "file": "JAB_Senna_2022.json"
         }
       ],
       "confidence": 0.9
@@ -643,12 +643,12 @@
         {
           "company": "Bitpanda",
           "year": 2022,
-          "file": "JAB_Bitpanda_2022.json"
+          "file": "JAB_Bitpanda_2022.pdf"
         },
         {
           "company": "Bitpanda",
           "year": 2022,
-          "file": "JAB_Bitpanda_2022.pdf"
+          "file": "JAB_Bitpanda_2022.json"
         }
       ],
       "confidence": 0.9
