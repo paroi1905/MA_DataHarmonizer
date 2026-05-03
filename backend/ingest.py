@@ -28,7 +28,7 @@ def load_pdf(file_path:str) -> UnifiedDocumentModel:
     }
 
 def load_mapping_dictionary():
-    dict_path = os.path.join(os.path.dirname(__file__), "..", "data", "mapping_dictionary.json")
+    dict_path = os.path.join(os.path.dirname(__file__), "mapping_dictionary.json")
     if os.path.exists(dict_path):
         with open(dict_path, "r", encoding="utf-8") as f:
             return json.load(f)

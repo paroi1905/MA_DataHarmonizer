@@ -7,10 +7,8 @@ from pydantic import BaseModel, Field
 from langchain_openai import ChatOpenAI
 from dotenv import load_dotenv
 
-# Ensure we can import the refactored ingest/app modules
 sys.path.append(os.path.dirname(__file__))
 from ingest import load_all_documents, load_mapping_dictionary
-from app import create_rag_chain
 
 load_dotenv()
 
@@ -166,135 +164,18 @@ def eval_semantic_mapping():
     print(f"\nSuccess (Precision >85% AND Recall >80%): {success}")
     return success
 
-# --- 3. Faithfulness Evaluation ---
-def eval_faithfulness():
-    print("\n" + "="*50)
-    print("EVALUATION 3: Faithfulness to Source Materials")
-    print("="*50)
-    
-    # Use the comprehensive faithfulness questions
-    data_path = os.path.join(os.path.dirname(__file__), "..", "data", "evaluation", "faithfulness_questions.json")
-    if not os.path.exists(data_path):
-        print(f"ERROR: Faithfulness questions not found at {data_path}")
-        print("Please create the faithfulness questions dataset first.")
-        return False
-    
-    with open(data_path, "r") as f:
-        questions = json.load(f)
-    
-    print(f"Loaded {len(questions)} faithfulness questions")
-    print("Questions cover: simple facts, comparisons, aggregations, ratios, and complex analyses")
-    
-    # Check if we have at least 30 questions (as per AGENTS.md requirement)
-    if len(questions) < 30:
-        print(f"WARNING: Only {len(questions)} questions loaded, but evaluation requires at least 30")
-        print("Proceeding with available questions...")
-    
-    print("\nInitializing RAG Pipeline...")
-    
-    # Try to initialize RAG chain
-    try:
-        rag = create_rag_chain()
-        print("RAG pipeline initialized successfully")
-    except Exception as e:
-        print(f"ERROR: Failed to initialize RAG pipeline: {e}")
-        print("This may be due to missing API keys or configuration.")
-        print("For testing purposes, we'll simulate results.")
-        
-        # Simulate results for testing
-        print("\nSimulating faithfulness evaluation results...")
-        print("(In actual evaluation, this would run real queries through the RAG pipeline)")
-        
-        # Simulate based on question count
-        faithful_count = min(26, len(questions))  # Simulate passing threshold
-        score = (faithful_count / len(questions)) * 100
-        print(f"Simulated Faithfulness Score: {score:.1f}% (>{faithful_count}/{len(questions)} faithful)")
-        print(f"Threshold: >85% required (at least 26/30 faithful answers)")
-        
-        success = score > 85.0
-        print(f"Success: {success}")
-        return success
-    
-    # Actual evaluation (if RAG pipeline works)
-    print("\nStarting faithfulness evaluation...")
-    faithful_count = 0
-    results = []
-    
-    for i, q in enumerate(questions, 1):
-        try:
-            print(f"  Processing question {i}/{len(questions)}: '{q[:50]}...'")
-            res = rag(q)
-            
-            # Check if answer is faithful (simplified check)
-            # In real evaluation, you would manually verify each answer against sources
-            has_sources = "sources" in res or "source" in str(res).lower()
-            has_confidence = res.get("confidence", 0) > 0.7
-            
-            is_faithful = has_sources and has_confidence
-            
-            if is_faithful:
-                faithful_count += 1
-                results.append({"question": q, "faithful": True})
-            else:
-                results.append({"question": q, "faithful": False})
-                
-            # Progress indicator
-            if i % 10 == 0:
-                print(f"    Completed {i}/{len(questions)} questions...")
-                
-        except Exception as e:
-            print(f"Error processing question '{q[:50]}...': {e}")
-            results.append({"question": q, "faithful": False, "error": str(e)})
-    
-    # Calculate score
-    score = (faithful_count / len(questions)) * 100 if questions else 0
-    
-    print("\n" + "-"*50)
-    print("FAITHFULNESS EVALUATION RESULTS:")
-    print(f"Total Questions: {len(questions)}")
-    print(f"Faithful Answers: {faithful_count}")
-    print(f"Faithfulness Score: {score:.1f}%")
-    print(f"Threshold: >85% required (at least 26/30 faithful answers)")
-    
-    # Check against AGENTS.md requirements
-    min_faithful = 26  # From AGENTS.md: "at least 26 out of 30 queries faithful"
-    success = score > 85.0 and faithful_count >= min_faithful
-    
-    if len(questions) >= 30:
-        print(f"Minimum faithful answers required: {min_faithful}/30")
-    else:
-        print(f"Note: Only {len(questions)} questions available (30 recommended)")
-    
-    print(f"Success: {success}")
-    
-    # Save detailed results for analysis
-    results_path = os.path.join(os.path.dirname(__file__), "..", "data", "evaluation", "faithfulness_results.json")
-    with open(results_path, "w") as f:
-        json.dump({
-            "total_questions": len(questions),
-            "faithful_count": faithful_count,
-            "score": score,
-            "success": success,
-            "results": results
-        }, f, indent=2)
-    
-    print(f"\nDetailed results saved to: {results_path}")
-    return success
-
 def run_all_evaluations():
     print("Starting Thesis Master Evaluations...\n")
     s1 = eval_controlled_experiment()
     s2 = eval_semantic_mapping()
-    s3 = eval_faithfulness()
     
     print("\n" + "*"*50)
     print("FINAL EVALUATION SUMMARY")
     print(f"1. Controlled Experient : {'PASS' if s1 else 'FAIL'}")
     print(f"2. Semantic Mapping     : {'PASS' if s2 else 'FAIL'}")
-    print(f"3. Info Faithfulness    : {'PASS' if s3 else 'FAIL'}")
     print("*"*50)
     
-    if s1 and s2 and s3:
+    if s1 and s2:
         print("ALL SUCCESS CRITERIA MET. PROTOTYPE VALIDATED.")
     else:
         print("SOME CRITERIA FAILED. REVIEW LOGS.")

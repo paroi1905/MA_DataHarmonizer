@@ -60,8 +60,8 @@ def load_questions() -> List[str]:
     with open(data_path, "r", encoding="utf-8") as f:
         questions = json.load(f)
     
-    # Use first 30 questions or all if less
-    questions = questions[:min(30, len(questions))]
+    # Use first 40 questions or all if less
+    questions = questions[:min(40, len(questions))]
     
     print(f"Loaded {len(questions)} questions for evaluation")
     return questions
@@ -196,9 +196,9 @@ def run_ragas_evaluation(ragas_data: List[Dict[str, Any]]) -> Dict[str, Any]:
     
     # Create RAGAS LLM using llm_factory (required for collections metrics)
     ragas_llm = llm_factory(
-        model="gpt-4o-mini",
+        model="gpt-4o",
         client=openai_client,
-        temperature=0.3
+        temperature=0
     )
     
     # Create LangChain embeddings (has embed_query method) and wrap for RAGAS

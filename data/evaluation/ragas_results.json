@@ -1,10 +1,10 @@
 {
-  "evaluation_date": "2026-04-30T09:26:05.493572",
-  "faithfulness": 0.85,
-  "answer_relevancy": 0.9643076662207887,
+  "evaluation_date": "2026-04-30T10:08:11.108355",
+  "faithfulness": 0.8732142857142857,
+  "answer_relevancy": 0.8700707223788682,
   "threshold": 0.85,
   "passed": true,
-  "valid_questions": 30,
-  "total_questions": 30,
+  "valid_questions": 40,
+  "total_questions": 40,
   "notes": "Manual review: Check ragas_evaluation_data.json for question-level details"
 }
