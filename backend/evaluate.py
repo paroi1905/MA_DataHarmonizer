@@ -18,7 +18,7 @@ def eval_controlled_experiment():
     print("EVALUATION 1: Controlled Experiment (Time Reduction)")
     print("="*50)
     
-    baseline_hours = 7.0
+    baseline_hours = 42 
     baseline_seconds = baseline_hours * 3600
     
     data_dir = os.path.join(os.path.dirname(__file__), "..", "data")
