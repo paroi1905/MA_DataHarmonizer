@@ -54,6 +54,8 @@ def eval_semantic_mapping():
     
     print("\nStarting semantic mapping evaluation...")
     
+    detailed_results = []
+    
     for i, item in enumerate(ground_truth, 1):
         ger = item["german"]
         expected = item["english"]
@@ -68,7 +70,17 @@ def eval_semantic_mapping():
         
         try:
             res = mapper.invoke(prompt)
-            predicted = res.mapped_field.lower()  # Normalize to lowercase
+            predicted = res.mapped_field.lower()
+            correct = (predicted == expected) or (predicted == "unknown" and expected == "unknown")
+            
+            detailed_results.append({
+                "german": ger,
+                "expected": expected,
+                "predicted": predicted,
+                "correct": correct,
+                "category": category,
+                "difficulty": difficulty
+            })
             
             # Update counters
             if predicted == expected:
@@ -94,6 +106,14 @@ def eval_semantic_mapping():
                 
         except Exception as e:
             print(f"Error mapping '{ger}': {e}")
+            detailed_results.append({
+                "german": ger,
+                "expected": expected,
+                "predicted": "ERROR",
+                "correct": False,
+                "category": category,
+                "difficulty": difficulty
+            })
             false_negatives += 1  # Count as failure
             category_results[category]["fn"] += 1
             difficulty_results[difficulty]["fn"] += 1
@@ -133,6 +153,15 @@ def eval_semantic_mapping():
     
     success = precision > 0.85 and recall > 0.80
     print(f"\nSuccess (Precision >85% AND Recall >80%): {success}")
+
+    # Save detailed results to JSON
+    out_dir = os.path.join(os.path.dirname(__file__), "..", "data", "evaluation")
+    os.makedirs(out_dir, exist_ok=True)
+    out_path = os.path.join(out_dir, "mapping_results.json")
+    with open(out_path, "w", encoding="utf-8") as f:
+        json.dump(detailed_results, f, indent=2, ensure_ascii=False)
+    print(f"Detailed results saved to: {out_path}")
+
     return success
 
 def run_all_evaluations():

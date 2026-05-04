@@ -13,6 +13,7 @@ from fastapi.responses import StreamingResponse, FileResponse
 
 from rag import create_rag_chain, get_vectorstore, RateLimitedEmbeddings
 from ingest import run_ingestion_pipeline, ingest_single_file
+import time
 from semantic import RateLimitedEmbeddings
 
 load_dotenv()
@@ -103,6 +104,7 @@ async def ingest_documents(req: IngestRequest):
     ]
 
     executor = ThreadPoolExecutor(max_workers=1)
+    start_time = time.time()
 
     async def event_stream():
         global rag_pipeline
@@ -117,6 +119,16 @@ async def ingest_documents(req: IngestRequest):
             await loop.run_in_executor(executor, ingest_single_file, fp)
 
         rag_pipeline = create_rag_chain()
+
+        elapsed = time.time() - start_time
+        log_path = os.path.join(os.path.dirname(__file__), "..", "data", "evaluation", "ingestion_time.json")
+        with open(log_path, "w") as f:
+            json.dump({
+                "artifact_seconds": round(elapsed, 1),
+                "documents_processed": len(file_paths),
+                "timestamp": time.strftime("%Y-%m-%d %H:%M:%S")
+            }, f, indent=2)
+
         yield "DONE\n"
 
     return StreamingResponse(event_stream(), media_type="text/plain")
