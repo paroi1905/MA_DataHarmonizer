@@ -1,6 +1,5 @@
 import json
 import os
-import time
 import sys
 
 from pydantic import BaseModel, Field
@@ -8,37 +7,9 @@ from langchain_openai import ChatOpenAI
 from dotenv import load_dotenv
 
 sys.path.append(os.path.dirname(__file__))
-from ingest import load_all_documents, load_mapping_dictionary
 
 load_dotenv()
 
-# --- 1. Controlled Experiment Evaluation ---
-def eval_controlled_experiment():
-    print("\n" + "="*50)
-    print("EVALUATION 1: Controlled Experiment (Time Reduction)")
-    print("="*50)
-    
-    baseline_hours = 42 
-    baseline_seconds = baseline_hours * 3600
-    
-    data_dir = os.path.join(os.path.dirname(__file__), "..", "data")
-    
-    start_time = time.time()
-    print("Running document extraction phase (simulation)...")
-    mapping_dict = load_mapping_dictionary()
-    udms = load_all_documents(data_dir, mapping_dict)
-    end_time = time.time()
-    
-    artifact_seconds = end_time - start_time
-    time_reduction_percentage = ((baseline_seconds - artifact_seconds) / baseline_seconds) * 100
-    
-    print(f"Manual Baseline: {baseline_seconds}s")
-    print(f"Artifact Extraction Time: {artifact_seconds:.2f}s")
-    print(f"Time Reduction: {time_reduction_percentage:.4f}%")
-    
-    success = time_reduction_percentage > 75.0
-    print(f"Success (>75% reduction required): {success}")
-    return success
 
 # --- 2. Semantic Mapping Evaluation ---
 class MappingResult(BaseModel):
@@ -165,20 +136,18 @@ def eval_semantic_mapping():
     return success
 
 def run_all_evaluations():
-    print("Starting Thesis Master Evaluations...\n")
-    s1 = eval_controlled_experiment()
+    print("Starting Thesis Evaluations...\n")
     s2 = eval_semantic_mapping()
-    
+
     print("\n" + "*"*50)
     print("FINAL EVALUATION SUMMARY")
-    print(f"1. Controlled Experient : {'PASS' if s1 else 'FAIL'}")
-    print(f"2. Semantic Mapping     : {'PASS' if s2 else 'FAIL'}")
+    print(f"Semantic Mapping: {'PASS' if s2 else 'FAIL'}")
     print("*"*50)
-    
-    if s1 and s2:
-        print("ALL SUCCESS CRITERIA MET. PROTOTYPE VALIDATED.")
+
+    if s2:
+        print("SUCCESS CRITERIA MET.")
     else:
-        print("SOME CRITERIA FAILED. REVIEW LOGS.")
+        print("CRITERIA FAILED. REVIEW LOGS.")
 
 if __name__ == "__main__":
     run_all_evaluations()

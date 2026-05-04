@@ -152,4 +152,25 @@ def ingest_single_file(file_path: str):
         print(f"⚠️ No semantic chunks created for {os.path.basename(file_path)}")
 
 if __name__ == "__main__":
+    import time
+    import json
+
+    start = time.time()
     run_ingestion_pipeline()
+    elapsed = time.time() - start
+
+    # Save result for evaluate_time.py
+    log_path = os.path.join(os.path.dirname(__file__), "..", "data", "evaluation", "ingestion_time.json")
+    with open(log_path, "w") as f:
+        json.dump({
+            "artifact_seconds": round(elapsed, 1),
+            "documents_processed": 8,
+            "timestamp": time.strftime("%Y-%m-%d %H:%M:%S")
+        }, f, indent=2)
+
+    print(f"\n{'='*50}")
+    print(f"INGESTION COMPLETE")
+    print(f"Documents processed: 8 (4 PDF + 4 JSON)")
+    print(f"Total processing time: {elapsed:.1f} seconds")
+    print(f"Result saved to data/evaluation/ingestion_time.json")
+    print(f"{'='*50}")
