@@ -1,9 +1,8 @@
 import json
 import os
-import time
 
-BASELINE_SECONDS = 151200  # 42 hours mean baseline
-CONSERVATIVE_BASELINE = 72000  # 20 hours conservative baseline
+BASELINE_P1_SECONDS = 72000    # Participant 1: 5h per pair × 4 = 20h
+BASELINE_P2_SECONDS = 230400   # Participant 2: 16h per pair × 4 = 64h
 THRESHOLD = 75.0
 TIME_LOG_PATH = os.path.join(os.path.dirname(__file__), "..", "data", "evaluation", "ingestion_time.json")
 
@@ -28,19 +27,18 @@ def eval_processing_time():
         print("  python backend/ingest.py")
         return False
 
-    print(f"Artifact Processing Time:      {artifact_seconds:.1f} seconds")
-    print(f"Average Manual Baseline:          {BASELINE_SECONDS} seconds (42 hours)")
-    print(f"Conservative Manual Baseline:  {CONSERVATIVE_BASELINE} seconds (20 hours)")
+    reduction_p1 = ((BASELINE_P1_SECONDS - artifact_seconds) / BASELINE_P1_SECONDS) * 100
+    reduction_p2 = ((BASELINE_P2_SECONDS - artifact_seconds) / BASELINE_P2_SECONDS) * 100
 
-    reduction_mean = ((BASELINE_SECONDS - artifact_seconds) / BASELINE_SECONDS) * 100
-    reduction_conservative = ((CONSERVATIVE_BASELINE - artifact_seconds) / CONSERVATIVE_BASELINE) * 100
+    print(f"Artifact Processing Time:          {artifact_seconds:.1f} seconds")
+    print(f"Participant 1 Baseline (P1):       {BASELINE_P1_SECONDS} seconds (20 hours)")
+    print(f"Participant 2 Baseline (P2):       {BASELINE_P2_SECONDS} seconds (64 hours)")
+    print(f"Threshold:                         >{THRESHOLD}%")
+    print(f"\nTime Reduction vs P1 (conservative): {reduction_p1:.2f}%")
+    print(f"Time Reduction vs P2 (upper bound):  {reduction_p2:.2f}%")
 
-    print(f"\nTime Reduction (average):         {reduction_mean:.2f}%")
-    print(f"Time Reduction (conservative): {reduction_conservative:.2f}%")
-    print(f"Threshold:                     >{THRESHOLD}%")
-
-    success = reduction_mean > THRESHOLD and reduction_conservative > THRESHOLD
-    print(f"\nSuccess (both >75%):           {'PASS' if success else 'FAIL'}")
+    success = reduction_p1 > THRESHOLD and reduction_p2 > THRESHOLD
+    print(f"\nSuccess (both >{THRESHOLD}%):          {'PASS' if success else 'FAIL'}")
     return success
 
 if __name__ == "__main__":
