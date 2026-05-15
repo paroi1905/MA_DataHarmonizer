@@ -1,7 +1,7 @@
 {
-  "evaluation_date": "2026-05-04T14:52:32.650545",
+  "evaluation_date": "2026-05-14T15:35:41.271046",
   "faithfulness": 0.8958333333333334,
-  "answer_relevancy": 0.871542118717645,
+  "answer_relevancy": 0.8715479913212754,
   "threshold": 0.85,
   "passed": true,
   "valid_questions": 40,

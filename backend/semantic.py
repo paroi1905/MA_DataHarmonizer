@@ -24,7 +24,6 @@ VALID_FIELDS = [
 
 def map_fields(udms: List[UnifiedDocumentModel], mapping_dict: dict) -> List[UnifiedDocumentModel]:
     mapper = ChatOpenAI(model="gpt-4o-mini", temperature=0).with_structured_output(MappingResult)
-    threshold = 0.75
     
     for udm in udms:
         if udm.get("source_format") == "json":
@@ -51,7 +50,7 @@ def map_fields(udms: List[UnifiedDocumentModel], mapping_dict: dict) -> List[Uni
                 for attempt in range(MAX_RETRIES):
                     try:
                         result = mapper.invoke(prompt)
-                        if result.mapped_field in VALID_FIELDS and result.confidence >= threshold:
+                        if result.mapped_field in VALID_FIELDS:
                             udm[result.mapped_field] = float(val)
                             print(f"Mapped: {ger_key} -> {result.mapped_field} ({result.confidence})")
                         break # Break loop on success
