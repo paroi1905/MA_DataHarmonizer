@@ -1,5 +1,4 @@
-# Financial RAG Assistant Prototype
-
+# Data Harmonizer
 This is a Retrieval-Augmented Generation (RAG) framework designed to ingest, semantically map, chunk, and query heterogeneous annual financial reports (PDFs and JSONs) from Austrian companies.
 
 
