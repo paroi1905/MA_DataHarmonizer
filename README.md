@@ -56,20 +56,21 @@ Place `.pdf` or `.json` files in the `data/` folder, then use the Documents tab 
 
 ```
 ├── backend/
-│   ├── app.py          # FastAPI server (REST endpoints, static file serving)
-│   ├── rag.py          # RAG pipeline (ChromaDB retriever, LLM generation)
-│   ├── ingest.py       # Document processing (PDF/JSON parsing, enrichment)
-│   ├── semantic.py     # Semantic mapping + chunking
-│   ├── udm.py          # Unified Document Model (schema definition)
-│   ├── evaluate.py     # Evaluation suite (mapping precision/recall, faithfulness)
-│   └── evaluate_ragas.py  # RAGAS-based faithfulness evaluation
+│   ├── app.py                  # FastAPI server (REST endpoints, static file serving)
+│   ├── rag.py                  # RAG pipeline (ChromaDB retriever, LLM generation)
+│   ├── ingest.py               # Document processing (PDF/JSON parsing, enrichment)
+│   ├── semantic.py             # Semantic mapping + chunking
+│   ├── udm.py                  # Unified Document Model (schema definition)
+│   ├── evaluate_mapping.py     # Semantic mapping evaluation (precision/recall)
+│   ├── evaluate_time.py        # Controlled experiment (ingestion time measurement)
+│   └── evaluate_ragas.py       # RAGAS-based faithfulness evaluation
 ├── static/
-│   ├── index.html      # Frontend HTML
-│   ├── styles.css      # Styling (dark theme)
-│   ├── app.ts          # TypeScript logic
-│   └── app.js          # Compiled JavaScript (do not edit directly)
-├── data/               # Financial reports + evaluation datasets
-├── chroma_db/          # Vector database (auto-created, can be deleted to reset)
+│   ├── index.html              # Frontend HTML
+│   ├── styles.css              # Styling (dark theme)
+│   ├── app.ts                  # TypeScript logic
+│   └── app.js                  # Compiled JavaScript (do not edit directly)
+├── data/                       # Financial reports + evaluation datasets
+├── chroma_db/                  # Vector database (auto-created, can be deleted to reset)
 └── requirements.txt
 ```
 
