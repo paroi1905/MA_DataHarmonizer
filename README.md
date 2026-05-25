@@ -110,3 +110,4 @@ rm -rf chroma_db/
 - The `chroma_db/` folder is auto-created on first startup
 - Only `.pdf` and `.json` files are accepted for upload
 - TypeScript compilation requires the `tsconfig.json` in the `static/` folder
+- Sample annual financial reports can be requested from the author
